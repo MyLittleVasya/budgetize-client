@@ -1,10 +1,262 @@
+@media screen and (min-width: 1440px) and (min-width: 2560px) {
+  .budget-wrapper {
+    width: 50%;
+    height: 40%;
+    border-radius: 15px;
+  }
+
+  .usage-wrapper {
+    width: 90%;
+    height: 40%;
+  }
+
+  .chart-wrapper {
+    width: 95%;
+    height: 95%;
+  }
+
+  ::ng-deep .legend-label-text {
+    font-size: 1.4rem !important;
+  }
+
+  ::ng-deep text {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .budget-wrapper {
+    width: 60%;
+    height: 40%;
+    border-radius: 15px;
+  }
+
+  .usage-wrapper {
+    width: 90%;
+    height: 40%;
+  }
+
+  .chart-wrapper {
+    width: 95%;
+    height: 95%;
+  }
+
+  ::ng-deep .legend-label-text {
+    font-size: 0.6rem !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .budget-wrapper {
+    width: 90%;
+    height: 40%;
+    border-radius: 15px;
+  }
+
+  .usage-wrapper {
+    width: 90%;
+    height: 40%;
+  }
+
+  .chart-wrapper {
+    width: 95%;
+    height: 95%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .content-wrapper {
+    border-radius: 15px 15px 0 0 !important;
+  }
+
+  .budget-wrapper {
+    width: 90%;
+    height: 40%;
+    border-radius: 15px;
+  }
+
+  .usage-wrapper {
+    width: 90%;
+    height: 40%;
+  }
+
+  .chart-wrapper {
+    width: 95%;
+    height: 95%;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+
+  .content-wrapper {
+    border-radius: 15px 15px 0 0 !important;
+  }
+
+  .budget-wrapper {
+    width: 95%;
+    height: 40%;
+    border-radius: 15px;
+  }
+
+  .usage-wrapper {
+    width: 95%;
+    height: 40%;
+  }
+
+  .chart-wrapper {
+    width: 95%;
+    height: 95%;
+  }
+
+  /*
+  ::ng-deep legend-label-text {
+    width: 100% !important;
+  }
+
+   */
+  ::ng-deep ngx-charts {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  ::ng-deep .legend-label-text {
+    font-size: 0.4rem !important;
+  }
+
+  ::ng-deep text {
+    font-size: 0.6rem !important;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+
+  .content-wrapper {
+    border-radius: 15px 15px 0 0 !important;
+  }
+
+  .budget-wrapper {
+    width: 95%;
+    height: 40%;
+    border-radius: 15px;
+  }
+
+  .usage-wrapper {
+    width: 95%;
+    height: 40%;
+  }
+
+  .chart-wrapper {
+    width: 95%;
+    height: 95%;
+  }
+
+  /*
+  ::ng-deep legend-label-text {
+    width: 100% !important;
+  }
+
+   */
+  ::ng-deep ngx-charts {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  ::ng-deep .legend-label-text {
+    font-size: 0.4rem !important;
+  }
+
+  ::ng-deep text {
+    font-size: 0.6rem !important;
+  }
+
+  ::ng-deep chart-legend {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 374px) {
+
+  .content-wrapper {
+    border-radius: 15px 15px 0 0 !important;
+  }
+
+  .budget-wrapper {
+    width: 95%;
+    height: 40%;
+    border-radius: 15px;
+  }
+
+  .usage-wrapper {
+    width: 95%;
+    height: 40%;
+  }
+
+  .chart-wrapper {
+    width: 95%;
+    height: 95%;
+  }
+
+  /*
+  ::ng-deep legend-label-text {
+    width: 100% !important;
+  }
+
+   */
+  ::ng-deep ngx-charts {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  ::ng-deep .legend-label-text {
+    font-size: 0.4rem !important;
+  }
+
+  ::ng-deep text {
+    font-size: 0.6rem !important;
+  }
+
+  ::ng-deep chart-legend {
+    display: none !important;
+  }
+}
+
 .content-wrapper {
   display: flex;
-  flex-shrink: 0;
-  width: 60vw;
+  flex-wrap: wrap;
+
   height: 100%;
   background-color: #362C6E;
   border-radius: 15px 0 0 15px;
+  justify-content: center;
+  align-items: center;
 }
+
+.budget-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #b7b7b750;
+  margin: 10px;
+}
+
+.usage-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  background-color: #b7b7b750;
+  margin: 10px;
+
+}
+
+.chart-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+
 
 

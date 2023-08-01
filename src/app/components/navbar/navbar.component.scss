@@ -1,17 +1,231 @@
+@media screen and (min-width: 2559px) {
+  //main styles
+  .navbar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: center;
+    height: 100%;
+  }
+
+  .logo-wrapper {
+    width: 80%;
+    height: 15%;
+
+    .text {
+      font-size: 3.6rem;
+    }
+  }
+
+  .button {
+    width: 80%;
+    max-width: 100%;
+
+    .text {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  //main styles
+  .navbar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: center;
+    height: 100%;
+  }
+
+  .logo-wrapper {
+    width: 80%;
+    height: 15%;
+
+    .text {
+      font-size: 2.8rem;
+    }
+  }
+
+  .button {
+    width: 80%;
+    max-width: 100%;
+
+    .text {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .navbar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: center;
+    height: 100%;
+  }
+
+  .logo-wrapper {
+    width: 80%;
+    height: 15%;
+
+    .text {
+      font-size: 1.8rem;
+    }
+  }
+
+  .button {
+    width: 80%;
+    max-width: 100%;
+
+    .text {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .logo-wrapper {
+    height: 60%;
+    margin: 5px !important;
+    .text {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+
+  .button {
+    flex-grow: 1;
+    padding: 5px;
+    height: 50%;
+
+    .text {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .navbar-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .logo-wrapper {
+    height: 60%;
+    margin: 5px !important;
+    .text {
+      font-size: 0.6rem;
+      margin: 5px;
+      font-weight: bold;
+    }
+  }
+
+  .button {
+    //flex-grow: 1;
+    padding: 5px;
+    height: 50%;
+    .icon {
+      width: 30px !important;
+      height: 30px !important;
+      padding-bottom: 0 !important;
+    }
+    .text {
+      display: none !important;
+    }
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .navbar-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .logo-wrapper {
+    height: 60%;
+    width: max-content;
+    margin: 5px !important;
+    .text {
+      font-size: 0.6rem;
+      margin: 5px;
+      font-weight: bold;
+    }
+  }
+
+  .button {
+    //flex-grow: 1;
+    padding: 5px;
+    height: 50%;
+    .icon {
+      width: 20px !important;
+      height: 20px !important;
+      padding-bottom: 0 !important;
+    }
+    .text {
+      display: none !important;
+    }
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .navbar-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .logo-wrapper {
+    height: 60%;
+    width: max-content;
+    margin: 5px !important;
+    .text {
+      font-size: 0.5rem;
+      margin: 3px;
+      font-weight: bold;
+    }
+  }
+
+  .button {
+    //flex-grow: 1;
+    padding: 5px;
+    height: 50%;
+    .icon {
+      width: 15px !important;
+      height: 15px !important;
+      padding-bottom: 0 !important;
+    }
+    .text {
+      display: none !important;
+    }
+  }
+}
+
+
+//main styles
 .navbar-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  //justify-content: center;
-  width: 20vw;
-  height: 100%;
   background-color: #f3f2f2;
+  transition: 0.2s;
 }
 
 .logo-wrapper {
   display: flex;
-  width: 80%;
-  height: 15%;
   border-radius: 15px;
   background-color: rgb(75, 56, 186, .2);
   align-items: center;
@@ -21,7 +235,6 @@
 
   .text {
     color: #362C6E;
-    font-size: 2.8rem;
   }
 }
 
@@ -30,10 +243,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 80%;
-  max-width: 100%;
   border-radius: 10px;
-  padding: 5px;
   margin: 10px;
   background-color: rgb(75, 56, 186, .05);
   transition: 0.2s;
@@ -49,7 +259,6 @@
   .text {
     padding-left: 5px;
     width: 70%;
-    font-size: 2rem;
     color: #362C6E;
   }
 }
@@ -60,3 +269,7 @@
   //border-color: #6352af;
   //border-bottom-width: 5px;
 }
+
+
+
+

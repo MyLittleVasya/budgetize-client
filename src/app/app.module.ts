@@ -6,6 +6,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import {NgOptimizedImage} from "@angular/common";
 import { ContentComponent } from './components/content/content.component';
 import { HistoryComponent } from './components/history/history.component';
+import {BarChartModule, PieChartModule} from "@swimlane/ngx-charts";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { HistoryComponent } from './components/history/history.component';
   ],
   imports: [
     BrowserModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    PieChartModule,
+    BarChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
