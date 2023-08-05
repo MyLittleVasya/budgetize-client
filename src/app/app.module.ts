@@ -7,6 +7,7 @@ import {NgOptimizedImage} from "@angular/common";
 import { ContentComponent } from './components/content/content.component';
 import { HistoryComponent } from './components/history/history.component';
 import {BarChartModule, PieChartModule} from "@swimlane/ngx-charts";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,10 @@ import {BarChartModule, PieChartModule} from "@swimlane/ngx-charts";
     BrowserModule,
     NgOptimizedImage,
     PieChartModule,
-    BarChartModule
+    BarChartModule,
+    RouterModule.forRoot([
+      {path: '', component: ContentComponent},
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
