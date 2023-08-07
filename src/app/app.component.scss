@@ -75,6 +75,7 @@
   }
 
   .app-content {
+    border-radius: 15px 15px 0 0 !important;
     width: 100% !important;
   }
 
@@ -102,6 +103,7 @@
   }
 
   .app-content {
+    border-radius: 15px 15px 0 0 !important;
     width: 100% !important;
   }
 
@@ -129,6 +131,7 @@
   }
 
   .app-content {
+    border-radius: 15px 15px 0 0 !important;
     width: 100% !important;
   }
 
@@ -156,6 +159,7 @@
   }
 
   .app-content {
+    border-radius: 15px 15px 0 0 !important;
     width: 100% !important;
   }
 
@@ -175,9 +179,17 @@
 }
 
 .app-content {
+  display: flex;
+  flex-grow: 1;
   background-color: #362C6E;
   border-radius: 15px 0 0 15px;
   width: 60%;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* width */

@@ -12,13 +12,15 @@ import {ProfileComponent} from "./components/profile/profile.component";
 import {SettingsComponent} from "./components/settings/settings.component";
 import {NotificationsComponent} from "./components/notifications/notifications.component";
 import {BudgetComponent} from "./components/budget/budget.component";
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ContentComponent,
-    HistoryComponent
+    HistoryComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,7 @@ import {BudgetComponent} from "./components/budget/budget.component";
     PieChartModule,
     BarChartModule,
     RouterModule.forRoot([
-      {path: '', component: ContentComponent},
+      {path: '', component: DashboardComponent},
       {path: 'profile', component: ProfileComponent},
       {path: 'settings', component: SettingsComponent},
       {path: 'notifications', component: NotificationsComponent},
