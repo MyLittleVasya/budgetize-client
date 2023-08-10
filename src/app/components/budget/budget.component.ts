@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     class: 'budget'
   },
   templateUrl: './budget.component.html',
-  styleUrls: ['./budget.component.scss']
+  styleUrls: ['./budget.component.scss', './budget.component.icons.scss']
 })
 export class BudgetComponent {
   chartData: any[] = [
