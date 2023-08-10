@@ -1,1 +1,22 @@
-<p>budget works!</p>
+<div class="content-wrapper">
+  <div class="operation-block">
+    <div class="check-button" (click)="modal_operation.style.display = 'flex'"></div>
+  </div>
+  <div class="budget-details">
+    <div class="chart-wrapper">
+      <ngx-charts-tree-map
+        [scheme]="'forest'"
+        [results]="chartData">
+      </ngx-charts-tree-map>
+    </div>
+  </div>
+
+</div>
+
+<div class="modal" #modal_operation>
+  <div class="content">
+    <div class="close-area">
+      <div class="close-button" (click)="modal_operation.style.display = 'none'">Close</div>
+    </div>
+  </div>
+</div>

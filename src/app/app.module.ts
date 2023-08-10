@@ -4,9 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {NgOptimizedImage} from "@angular/common";
-import { ContentComponent } from './components/content/content.component';
 import { HistoryComponent } from './components/history/history.component';
-import {BarChartModule, PieChartModule} from "@swimlane/ngx-charts";
+import {BarChartModule, PieChartModule, TreeMapModule} from "@swimlane/ngx-charts";
 import {RouterModule} from "@angular/router";
 import {ProfileComponent} from "./components/profile/profile.component";
 import {SettingsComponent} from "./components/settings/settings.component";
@@ -18,7 +17,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    ContentComponent,
+    BudgetComponent,
     HistoryComponent,
     DashboardComponent
   ],
@@ -34,6 +33,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
       {path: 'notifications', component: NotificationsComponent},
       {path: 'budget', component: BudgetComponent},
     ]),
+    TreeMapModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
