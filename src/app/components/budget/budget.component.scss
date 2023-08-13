@@ -377,7 +377,7 @@
 
   .modal {
     width: 100%;
-    min-height: 110% !important;
+    height: 100%;
 
     background-color: #2d2d2d99;
 
@@ -488,7 +488,7 @@
 
   .modal {
     width: 100%;
-    min-height: 110% !important;
+    height: 100%;
 
     background-color: #2d2d2d99;
 
@@ -599,7 +599,7 @@
 
   .modal {
     width: 100%;
-    min-height: 110% !important;
+    height: 100%;
 
     background-color: #2d2d2d99;
 
@@ -710,7 +710,7 @@
 
   .modal {
     width: 100%;
-    min-height: 120% !important;
+    height: 100%;
 
     background-color: #2d2d2d99;
 
@@ -849,6 +849,8 @@
 .modal {
   position: absolute;
   display: none;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   align-items: center;
