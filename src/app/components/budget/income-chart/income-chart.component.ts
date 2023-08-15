@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-budget',
+  selector: 'app-income-chart',
   host: {
-    class: 'budget'
+    class: 'budget-content'
   },
-  templateUrl: './budget.component.html',
-  styleUrls: ['./budget.component.scss', './budget.component.icons.scss']
+  templateUrl: './income-chart.component.html',
+  styleUrls: ['./income-chart.component.scss']
 })
-export class BudgetComponent {
+export class IncomeChartComponent {
   chartData: any[] = [
     {
       "name": "Germany",

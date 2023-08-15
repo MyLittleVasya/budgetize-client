@@ -1,0 +1,29 @@
+<div class="form-wrapper">
+  <div class="form-area">
+    <div class="header">Fill operation details</div>
+
+    <label for="name">Name</label>
+    <input class="data-input" type="text" maxlength="25" id="name">
+
+    <label for="date">Date</label>
+    <input class="data-input" type="date" id="date" value="1971-01-01">
+
+    <label for="date">Amount</label>
+    <input class="data-input" type="number" id="amount">
+
+    <label for="category">Category</label>
+    <input class="data-input" list="categories" id="category" name="category"/>
+
+    <datalist id="categories">
+      <option value="Chocolate"></option>
+      <option value="Coconut"></option>
+      <option value="Mint"></option>
+      <option value="Strawberry"></option>
+      <option value="Vanilla"></option>
+    </datalist>
+    <div class="button">
+      <div class="icon ok-icon"></div>
+      <div class="text">Finish</div>
+    </div>
+  </div>
+</div>

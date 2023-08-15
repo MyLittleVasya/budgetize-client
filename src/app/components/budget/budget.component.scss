@@ -28,82 +28,11 @@
     width: 90%;
     height: 90%;
 
-    .chart-wrapper {
+    .budget-content-wrapper {
       width: 95%;
       height: 95%;
 
       border-radius: 15px;
-    }
-  }
-
-  .modal {
-    width: 100%;
-    height: 100%;
-
-    background-color: #2d2d2d99;
-
-    .content {
-      flex-direction: column;
-      width: 50%;
-      height: 70%;
-
-      border-radius: 15px;
-
-      .close-area {
-        width: 100%;
-        height: 10%;
-
-
-        .close-button {
-          width: 10%;
-          height: 70%;
-          margin: 5px;
-
-          .icon {
-            width: 90%;
-            height: 90%;
-          }
-        }
-      }
-
-      .form-area {
-        width: 50%;
-        height: 90%;
-
-        margin: 5px 5px 50px 5px;
-        border-radius:  15px;
-
-        .header {
-          font-size: 3rem !important;
-        }
-
-        .text-input {
-          padding: 3px;
-          width: 35%;
-          height: 8% !important;
-          border-radius: 10px;
-          font-size: 1.6rem !important;
-        }
-
-        .button {
-          width: 40%;
-          height: 10%;
-          margin: 5px;
-
-          border-radius: 10px;
-
-          .icon {
-            width: 30px;
-            height: 30px;
-            margin: 5px;
-          }
-
-          .text {
-            color: #f3f2f2;
-            font-size: 1.4rem;
-          }
-        }
-      }
     }
   }
 
@@ -146,82 +75,11 @@
     width: 90%;
     height: 90%;
 
-    .chart-wrapper {
+    .budget-content-wrapper {
       width: 95%;
       height: 95%;
 
       border-radius: 15px;
-    }
-  }
-
-  .modal {
-    width: 100%;
-    height: 100%;
-
-    background-color: #2d2d2d99;
-
-    .content {
-      flex-direction: column;
-      width: 50%;
-      height: 70%;
-
-      border-radius: 15px;
-
-      .close-area {
-        width: 100%;
-        height: 10%;
-
-
-        .close-button {
-          width: 10%;
-          height: 70%;
-          margin: 5px;
-
-          .icon {
-            width: 90%;
-            height: 90%;
-          }
-        }
-      }
-
-      .form-area {
-        width: 50%;
-        height: 90%;
-
-        margin: 5px 5px 50px 5px;
-        border-radius:  15px;
-
-        .header {
-          font-size: 2rem !important;
-        }
-
-        .text-input {
-          padding: 3px;
-          width: 35%;
-          height: 5% !important;
-          border-radius: 10px;
-          font-size: 1.2rem !important;
-        }
-
-        .button {
-          width: 40%;
-          height: 10%;
-          margin: 5px;
-
-          border-radius: 10px;
-
-          .icon {
-            width: 30px;
-            height: 30px;
-            margin: 5px;
-          }
-
-          .text {
-            color: #f3f2f2;
-            font-size: 1.4rem;
-          }
-        }
-      }
     }
   }
 }
@@ -232,7 +90,7 @@
     height: 10%;
 
     .button {
-      width: 30%;
+      width: 25% !important;
       height: 75%;
 
       border-radius: 15px;
@@ -256,83 +114,11 @@
     width: 90%;
     height: 90%;
 
-    .chart-wrapper {
+    .budget-content-wrapper {
       width: 95%;
       height: 95%;
 
       border-radius: 15px;
-    }
-  }
-
-  .modal {
-    width: 100%;
-    height: 100%;
-
-    background-color: #2d2d2d99;
-
-    .content {
-      flex-direction: column;
-      width: 50%;
-      height: 70%;
-
-      border-radius: 15px;
-
-      .close-area {
-        width: 100%;
-        height: 10%;
-
-
-        .close-button {
-          width: 10%;
-          height: 70%;
-          margin: 5px;
-
-          .icon {
-            width: 90%;
-            height: 90%;
-          }
-        }
-      }
-
-      .form-area {
-        width: 80% !important;
-        height: 90%;
-
-        margin: 5px 5px 50px 5px;
-        border-radius:  15px;
-
-        .header {
-          font-size: 2rem !important;
-        }
-
-        .text-input {
-          padding: 3px;
-          width: 45% !important;
-          height: 5% !important;
-          border-radius: 10px;
-          margin: 5px !important;
-          font-size: 1.2rem !important;
-        }
-
-        .button {
-          width: 40%;
-          height: 10%;
-          margin: 10px !important;
-
-          border-radius: 10px;
-
-          .icon {
-            width: 30px;
-            height: 30px;
-            margin: 5px;
-          }
-
-          .text {
-            color: #f3f2f2;
-            font-size: 1.4rem;
-          }
-        }
-      }
     }
   }
 }
@@ -367,83 +153,11 @@
     width: 90%;
     height: 90%;
 
-    .chart-wrapper {
+    .budget-content-wrapper {
       width: 95%;
       height: 95%;
 
       border-radius: 15px;
-    }
-  }
-
-  .modal {
-    width: 100%;
-    height: 100%;
-
-    background-color: #2d2d2d99;
-
-    .content {
-      flex-direction: column;
-      width: 80% !important;
-      height: 70%;
-
-      border-radius: 15px;
-
-      .close-area {
-        width: 100%;
-        height: 10%;
-
-
-        .close-button {
-          width: 10%;
-          height: 70%;
-          margin: 5px;
-
-          .icon {
-            width: 90%;
-            height: 90%;
-          }
-        }
-      }
-
-      .form-area {
-        width: 80% !important;
-        height: 90%;
-
-        margin: 5px 5px 50px 5px;
-        border-radius:  15px;
-
-        .header {
-          font-size: 2rem !important;
-        }
-
-        .text-input {
-          padding: 3px;
-          width: 45% !important;
-          height: 5% !important;
-          border-radius: 10px;
-          margin: 5px !important;
-          font-size: 1.2rem !important;
-        }
-
-        .button {
-          width: 40%;
-          height: 10%;
-          margin: 10px !important;
-
-          border-radius: 10px;
-
-          .icon {
-            width: 30px;
-            height: 30px;
-            margin: 5px;
-          }
-
-          .text {
-            color: #f3f2f2;
-            font-size: 1.4rem;
-          }
-        }
-      }
     }
   }
 }
@@ -454,7 +168,7 @@
     height: 10%;
 
     .button {
-      width: 50% !important;
+      width: 30% !important;
       height: 75% !important;
 
       border-radius: 15px;
@@ -463,12 +177,11 @@
       .icon  {
         width: 30px !important;
         height: 30px !important;
-        margin: 10px !important;
       }
 
       .text {
         color: #e3e1e1;
-        font-size: 1rem !important;
+        font-size: 0.6rem !important;
         margin: 5px;
       }
     }
@@ -478,83 +191,11 @@
     width: 90%;
     height: 90%;
 
-    .chart-wrapper {
+    .budget-content-wrapper {
       width: 95%;
       height: 95%;
 
       border-radius: 15px;
-    }
-  }
-
-  .modal {
-    width: 100%;
-    height: 100%;
-
-    background-color: #2d2d2d99;
-
-    .content {
-      flex-direction: column;
-      width: 90% !important;
-      height: 70%;
-
-      border-radius: 15px;
-
-      .close-area {
-        width: 100%;
-        height: 10%;
-
-
-        .close-button {
-          width: 20% !important;
-          height: 70%;
-          margin: 5px;
-
-          .icon {
-            width: 90%;
-            height: 90%;
-          }
-        }
-      }
-
-      .form-area {
-        width: 80% !important;
-        height: 90%;
-
-        margin: 5px 5px 50px 5px;
-        border-radius:  15px;
-
-        .header {
-          font-size: 1.6rem !important;
-        }
-
-        .text-input {
-          padding: 3px;
-          width: 55% !important;
-          height: 5% !important;
-          border-radius: 10px;
-          margin: 5px !important;
-          font-size: 1.2rem !important;
-        }
-
-        .button {
-          width: 60% !important;
-          height: 10%;
-          margin: 10px !important;
-
-          border-radius: 10px;
-
-          .icon {
-            width: 30px;
-            height: 30px;
-            margin: 5px;
-          }
-
-          .text {
-            color: #f3f2f2;
-            font-size: 1.4rem;
-          }
-        }
-      }
     }
   }
 }
@@ -565,7 +206,7 @@
     height: 10%;
 
     .button {
-      width: 50% !important;
+      width: 30% !important;
       height: 75% !important;
 
       border-radius: 15px;
@@ -574,12 +215,11 @@
       .icon  {
         width: 30px !important;
         height: 30px !important;
-        margin: 10px !important;
       }
 
       .text {
         color: #e3e1e1;
-        font-size: 1rem !important;
+        font-size: 0.6rem !important;
         margin: 5px;
       }
     }
@@ -589,83 +229,11 @@
     width: 90%;
     height: 90%;
 
-    .chart-wrapper {
+    .budget-content-wrapper {
       width: 95%;
       height: 95%;
 
       border-radius: 15px;
-    }
-  }
-
-  .modal {
-    width: 100%;
-    height: 100%;
-
-    background-color: #2d2d2d99;
-
-    .content {
-      flex-direction: column;
-      width: 90% !important;
-      height: 70%;
-
-      border-radius: 15px;
-
-      .close-area {
-        width: 100%;
-        height: 10%;
-
-
-        .close-button {
-          width: 20% !important;
-          height: 70%;
-          margin: 5px;
-
-          .icon {
-            width: 90%;
-            height: 90%;
-          }
-        }
-      }
-
-      .form-area {
-        width: 80% !important;
-        height: 90%;
-
-        margin: 5px 5px 50px 5px;
-        border-radius:  15px;
-
-        .header {
-          font-size: 1.6rem !important;
-        }
-
-        .text-input {
-          padding: 3px;
-          width: 55% !important;
-          height: 5% !important;
-          border-radius: 10px;
-          margin: 5px !important;
-          font-size: 1.2rem !important;
-        }
-
-        .button {
-          width: 60% !important;
-          height: 10%;
-          margin: 10px !important;
-
-          border-radius: 10px;
-
-          .icon {
-            width: 30px;
-            height: 30px;
-            margin: 5px;
-          }
-
-          .text {
-            color: #f3f2f2;
-            font-size: 1.4rem;
-          }
-        }
-      }
     }
   }
 }
@@ -676,21 +244,20 @@
     height: 10%;
 
     .button {
-      width: 70% !important;
+      width: 30% !important;
       height: 75% !important;
 
       border-radius: 15px;
 
       cursor: pointer;
       .icon  {
-        width: 30px !important;
-        height: 30px !important;
-        margin: 10px !important;
+        width: 24px !important;
+        height: 24px !important;
       }
 
       .text {
         color: #e3e1e1;
-        font-size: 1rem !important;
+        font-size: 0.6rem !important;
         margin: 5px;
       }
     }
@@ -700,83 +267,11 @@
     width: 90%;
     height: 90%;
 
-    .chart-wrapper {
+    .budget-content-wrapper {
       width: 95%;
       height: 95%;
 
       border-radius: 15px;
-    }
-  }
-
-  .modal {
-    width: 100%;
-    height: 100%;
-
-    background-color: #2d2d2d99;
-
-    .content {
-      flex-direction: column;
-      width: 90% !important;
-      height: 70%;
-
-      border-radius: 15px;
-
-      .close-area {
-        width: 100%;
-        height: 10%;
-
-
-        .close-button {
-          width: 20% !important;
-          height: 70%;
-          margin: 5px;
-
-          .icon {
-            width: 90%;
-            height: 90%;
-          }
-        }
-      }
-
-      .form-area {
-        width: 80% !important;
-        height: 90%;
-
-        margin: 5px 5px 50px 5px;
-        border-radius:  15px;
-
-        .header {
-          font-size: 1.6rem !important;
-        }
-
-        .text-input {
-          padding: 3px;
-          width: 70% !important;
-          height: 5% !important;
-          border-radius: 10px;
-          margin: 5px !important;
-          font-size: 1.2rem !important;
-        }
-
-        .button {
-          width: 60% !important;
-          height: 10%;
-          margin: 10px !important;
-
-          border-radius: 10px;
-
-          .icon {
-            width: 30px;
-            height: 30px;
-            margin: 5px;
-          }
-
-          .text {
-            color: #f3f2f2;
-            font-size: 1.4rem;
-          }
-        }
-      }
     }
   }
 }
@@ -804,6 +299,7 @@
     width: 30%;
     height: 75%;
 
+    margin: 5px;
     border-radius: 15px;
     transition: 0.3s;
     background-color: rgb(75, 56, 186, .50);
@@ -836,132 +332,14 @@
   width: 90%;
   height: 90%;
 
-  .chart-wrapper {
+  .budget-content-wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 95%;
     height: 95%;
 
     border-radius: 15px;
     background-color: #b7b7b750;
-  }
-}
-
-.modal {
-  position: absolute;
-  display: none;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-
-  background-color: #2d2d2d99;
-  z-index: 10;
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 70%;
-
-    border-radius: 15px;
-    background-color: #f3f2f2;
-
-    .close-area {
-      display: flex;
-      width: 100%;
-      height: 10%;
-
-
-      .close-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 10%;
-        height: 70%;
-        margin: 5px;
-
-        transition: 0.3s;
-        border-radius: 10px;
-        background-color: #362C6E;
-        cursor: pointer;
-
-        .icon {
-          width: 90%;
-          height: 90%;
-          background-repeat: no-repeat;
-          background-size: contain;
-        }
-      }
-
-      .close-button:hover {
-        background-color: rgb(75, 56, 186, .50);
-      }
-    }
-
-    .form-area {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 50%;
-      height: 90%;
-
-      margin: 5px 5px 50px 5px;
-      border-radius:  15px;
-      background-color: rgb(75, 56, 186, .2);
-
-      .header {
-        font-size: 2rem;
-        text-align: center;
-      }
-
-      .text-input {
-        -webkit-appearance: none;
-        outline: none;
-        padding: 3px;
-        width: 35%;
-        height: 5%;
-        border-radius: 10px;
-        border-style: solid;
-        border-width: 3px;
-        border-color: #362C6E;
-        font-size: 1rem;
-      }
-
-      .button {
-        display: flex;
-        align-items: center;
-        width: 40%;
-        height: 10%;
-        margin: 5px;
-
-        transition: 0.3s;
-        border-radius: 10px;
-        background-color: #362C6E;
-        cursor: pointer;
-      }
-
-      .icon {
-        width: 30px;
-        height: 30px;
-        margin: 5px;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-
-      .text {
-        color: #f3f2f2;
-        text-align: center;
-        font-size: 1.4rem;
-      }
-
-      .button:hover {
-        background-color: rgb(75, 56, 186, .50);
-      }
-    }
   }
 }

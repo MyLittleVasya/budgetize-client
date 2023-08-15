@@ -1,54 +1,23 @@
 <div class="content-wrapper">
   <div class="operation-block">
-    <div class="button" (click)="modal_operation.style.display = 'flex'">
+    <div class="button" [routerLink]="[{ outlets: { 'side': ['add-operation'] } }]">
       <div class="icon add-icon"></div>
       <div class="text">Add operation</div>
     </div>
+    <div class="button" [routerLink]="[{ outlets: { 'side': ['spending'] } }]">
+      <div class="icon spending-icon"></div>
+      <div class="text">Total spending</div>
+    </div>
+    <div class="button" [routerLink]="[{ outlets: { 'side': ['income'] } }]">
+      <div class="icon income-icon"></div>
+      <div class="text">Total income</div>
+    </div>
   </div>
   <div class="budget-details">
-    <div class="chart-wrapper">
-      <ngx-charts-tree-map
-        [scheme]="'cool'"
-        [results]="chartData">
-      </ngx-charts-tree-map>
-    </div>
-  </div>
-
-</div>
-
-<div class="modal" #modal_operation>
-  <div class="content">
-    <div class="close-area">
-      <div class="close-button" (click)="modal_operation.style.display = 'none'">
-        <div class="icon arrow-icon"></div>
-      </div>
-    </div>
-    <div class="form-area">
-      <div class="header">Fill operation details</div>
-
-      <label for="name" >Name</label>
-      <input class="text-input" type="text" maxlength="25" id="name">
-
-      <label for="date">Date</label>
-      <input class="text-input" type="date" id="date" value="1971-01-01">
-
-      <label for="date">Amount</label>
-      <input class="text-input" type="number" id="amount">
-
-      <label for="category">Category</label>
-      <input class="text-input" list="categories" id="category" name="category" />
-
-      <datalist id="categories">
-        <option value="Chocolate"></option>
-        <option value="Coconut"></option>
-        <option value="Mint"></option>
-        <option value="Strawberry"></option>
-        <option value="Vanilla"></option>
-      </datalist>
-      <div class="button">
-        <div class="icon ok-icon"></div>
-        <div class="text">Finish</div>
-      </div>
+    <div class="budget-content-wrapper">
+      <router-outlet name="side"></router-outlet>
     </div>
   </div>
 </div>
+
+
