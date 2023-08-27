@@ -1,11 +1,11 @@
 <div class="navbar-wrapper">
   <div class="logo">BUDGETIZE</div>
   <div class="navigation-wrapper">
-    <div class="button">
+    <div class="button" [routerLink]="[{ outlets: { 'content-router': ['overview'] } }]">
       <div class="icon"></div>
       <div class="text">Overview</div>
     </div>
-    <div class="button">
+    <div class="button" [routerLink]="[{ outlets: { 'content-router': ['budget'] } }]">
       <div class="icon"></div>
       <div class="text">Budget</div>
     </div>

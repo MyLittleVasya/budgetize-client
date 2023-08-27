@@ -4,21 +4,47 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import {NgOptimizedImage} from "@angular/common";
 import {BarChartModule, PieChartModule, TreeMapModule} from "@swimlane/ngx-charts";
-import {RouterModule} from "@angular/router";
-import { NavbarComponent } from './components/navbar/navbar.component';
+import {RouterModule, Routes} from "@angular/router";
+import { NavbarComponent } from './main/navbar/navbar.component';
+import { OverviewComponent } from './main/content/overview/overview.component';
+import { BudgetConfigComponent } from './main/content/budget-config/budget-config.component';
+import { AddOperationComponent } from './main/content/add-operation/add-operation.component';
+import { ProfileComponent } from './main/content/profile/profile.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { MainComponent } from './main/main.component';
+
+const routes: Routes = [
+  { path: '', component: MainComponent},
+  { path: 'welcome', component: WelcomeComponent},
+  { path: 'main', component: MainComponent,
+    children: [
+      { path: '', redirectTo: 'overview', pathMatch: 'full' },
+      { path: 'overview', component: OverviewComponent, outlet:'content-router'},
+      { path: 'budget', component: BudgetConfigComponent, outlet:'content-router'},
+    ]
+  },
+
+]
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    OverviewComponent,
+    BudgetConfigComponent,
+    AddOperationComponent,
+    ProfileComponent,
+    WelcomeComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
     NgOptimizedImage,
     PieChartModule,
     BarChartModule,
-    RouterModule.forRoot([
-
-    ]),
+    RouterModule.forRoot(routes),
     TreeMapModule,
   ],
   providers: [],
