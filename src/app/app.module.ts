@@ -12,6 +12,7 @@ import { AddOperationComponent } from './main/content/add-operation/add-operatio
 import { ProfileComponent } from './main/content/profile/profile.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MainComponent } from './main/main.component';
+import { Homelab2Component } from './main/content/homelab2/homelab2.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent},
@@ -26,8 +27,6 @@ const routes: Routes = [
 
 ]
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +37,7 @@ const routes: Routes = [
     ProfileComponent,
     WelcomeComponent,
     MainComponent,
+    Homelab2Component,
   ],
   imports: [
     BrowserModule,

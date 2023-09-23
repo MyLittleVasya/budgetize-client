@@ -1,24 +1,27 @@
-<div class="navbar-wrapper">
-  <div class="logo">BUDGETIZE</div>
-  <div class="navigation-wrapper">
-    <div class="button" [routerLink]="[{ outlets: { 'content-router': ['overview'] } }]">
-      <div class="icon"></div>
-      <div class="text">Overview</div>
+<header class="navbar" #navbar>
+  <div class="navbar-toggler burger-icon" (click)="navbar_toggle()" #toggler></div>
+  <div class="wrapper">
+    <div class="logo" >Deliverize</div>
+    <div class="navigation">
+      <div class="button">
+        <div class="icon home-icon"></div>
+        <div class="text">Home</div>
+      </div>
+      <div class="button">
+        <div class="icon services-icon"></div>
+        <div class="text">Services</div>
+      </div>
+      <div class="button">
+        <div class="icon pricing-icon"></div>
+        <div class="text">Pricing</div>
+      </div>
     </div>
-    <div class="button" [routerLink]="[{ outlets: { 'content-router': ['budget'] } }]">
-      <div class="icon"></div>
-      <div class="text">Budget</div>
-    </div>
-    <div class="button">
-      <div class="icon"></div>
-      <div class="text">Add operation</div>
-    </div>
-    <div class="button">
-      <div class="icon"></div>
-      <div class="text">Max Shevchuk</div>
+    <div class="account-controls">
+      <div class="button">
+        <div class="icon profile-icon"></div>
+        <div class="text">{{username}}</div>
+      </div>
+      <div class="session-button"></div>
     </div>
   </div>
-  <div class="signout-wrapper">
-    <div class="button"></div>
-  </div>
-</div>
+</header>
