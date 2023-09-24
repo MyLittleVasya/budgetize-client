@@ -1,27 +1,27 @@
 <header class="navbar" #navbar>
   <div class="navbar-toggler burger-icon" (click)="navbar_toggle()" #toggler></div>
-  <div class="wrapper">
-    <div class="logo" >Deliverize</div>
+  <nav class="wrapper">
+    <div class="logo" [routerLink]="[{ outlets: { 'content-router': ['lab'] } }]" (click)="navbar_toggle()">Deliverize</div>
     <div class="navigation">
-      <div class="button">
+      <div class="button" (click)="navbar_toggle()">
         <div class="icon home-icon"></div>
         <div class="text">Home</div>
       </div>
-      <div class="button">
+      <div class="button" (click)="navbar_toggle()">
         <div class="icon services-icon"></div>
         <div class="text">Services</div>
       </div>
-      <div class="button">
+      <div class="button" (click)="navbar_toggle()">
         <div class="icon pricing-icon"></div>
         <div class="text">Pricing</div>
       </div>
     </div>
-    <div class="account-controls">
+    <div class="account-controls" (click)="navbar_toggle()">
       <div class="button">
         <div class="icon profile-icon"></div>
         <div class="text">{{username}}</div>
       </div>
       <div class="session-button"></div>
     </div>
-  </div>
+  </nav>
 </header>

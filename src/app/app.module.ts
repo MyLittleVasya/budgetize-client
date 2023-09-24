@@ -15,11 +15,11 @@ import { MainComponent } from './main/main.component';
 import { Homelab2Component } from './main/content/homelab2/homelab2.component';
 
 const routes: Routes = [
-  { path: '', component: MainComponent},
+  { path: '', redirectTo: 'main', pathMatch: 'full'},
   { path: 'welcome', component: WelcomeComponent},
   { path: 'main', component: MainComponent,
     children: [
-      { path: '', redirectTo: 'overview', pathMatch: 'full' },
+      { path: 'lab', component: Homelab2Component, outlet:'content-router'},
       { path: 'overview', component: OverviewComponent, outlet:'content-router'},
       { path: 'budget', component: BudgetConfigComponent, outlet:'content-router'},
     ]
