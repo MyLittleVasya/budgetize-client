@@ -19,17 +19,19 @@ export class NavbarComponent {
   navbar_collapsed = true
 
   navbar_toggle() {
-    if (this.navbar_collapsed) {
-      this.elementReference.nativeElement.style.height = '100%';
-      this.navbar_collapsed = false;
-      this.navbar.nativeElement.className = 'navbar-mobile';
-      this.toggler.nativeElement.className = 'navbar-toggler close-icon';
-    }
-    else {
-      this.elementReference.nativeElement.style.height = '10%'
-      this.navbar_collapsed = true;
-      this.navbar.nativeElement.className = 'navbar';
-      this.toggler.nativeElement.className = 'navbar-toggler burger-icon';
+    if (window.innerWidth <= 768) {
+      if (this.navbar_collapsed) {
+        this.elementReference.nativeElement.style.height = '100%';
+        this.navbar_collapsed = false;
+        this.navbar.nativeElement.className = 'navbar-mobile';
+        this.toggler.nativeElement.className = 'navbar-toggler close-icon';
+      }
+      else {
+        this.elementReference.nativeElement.style.height = '10%'
+        this.navbar_collapsed = true;
+        this.navbar.nativeElement.className = 'navbar';
+        this.toggler.nativeElement.className = 'navbar-toggler burger-icon';
+      }
     }
   }
 }

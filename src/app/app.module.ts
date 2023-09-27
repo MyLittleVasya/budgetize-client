@@ -13,6 +13,7 @@ import { ProfileComponent } from './main/content/profile/profile.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MainComponent } from './main/main.component';
 import { Homelab2Component } from './main/content/homelab2/homelab2.component';
+import { FooterComponent } from './main/footer/footer.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full'},
@@ -38,6 +39,7 @@ const routes: Routes = [
     WelcomeComponent,
     MainComponent,
     Homelab2Component,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

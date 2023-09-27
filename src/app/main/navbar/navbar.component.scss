@@ -1,9 +1,10 @@
 :host {
   flex-shrink: 0;
   width: 100%;
-  height: 10%;
+  height: 10vh;
   position: fixed;
   transition: 0.3s;
+  z-index: 10;
 }
 
 .navbar {
@@ -143,25 +144,16 @@
   }
 }
 
-@media screen and (min-width: 2560px) {
+.navbar-mobile {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #FF891C;
+  transition: 0.3s;
 
-}
-
-@media screen and (min-width: 1440px) and (max-width: 2559px) {
-
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
-
-
-  .navbar {
+  .wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     box-sizing: border-box;
     align-items: center;
     width: 100%;
@@ -169,16 +161,17 @@
     padding-left: 20px;
     padding-right: 20px;
     background-color: #FF891C;
+    transition: 0.3s;
 
     .logo {
       box-sizing: border-box;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 90%;
-      width: 15%;
+      height: 10%;
+      width: 90%;
 
-      font-size: 24px;
+      font-size: 36px;
       color: #FF891C;
       background-color: white;
       transition: 0.3s;
@@ -193,23 +186,23 @@
 
     .navigation {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
-      width: 60%;
-      height: 100%;
+      width: 90%;
+      height: 60%;
       padding: 0 20px 0 20px;
 
       .button {
         display: flex;
         box-sizing: border-box;
         align-items: center;
-        width: 25%;
-        height: 80%;
+        width: 90%;
+        height: 20%;
         margin: 10px;
         transition: 0.3s;
 
         .icon {
-          width: 30%;
+          width: 20%;
           aspect-ratio: 1/1;
           background-repeat: no-repeat;
           background-size: contain;
@@ -219,7 +212,7 @@
           text-align: center;
           color: white;
           flex-grow: 1;
-          font-size: 16px;
+          font-size: 20px;
         }
       }
 
@@ -234,14 +227,14 @@
 
     .account-controls {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       justify-content: flex-end;
-      width: 25%;
-      height: 100%;
+      width: 90%;
+      height: 20%;
 
       .session-button {
-        width: 10%;
+        width: 15%;
         aspect-ratio: 1/1;
         background-repeat: no-repeat;
         background-size: contain;
@@ -249,7 +242,7 @@
       }
 
       .session-button:hover {
-        width: 15%;
+        width: 20%;
         cursor: pointer;
       }
 
@@ -264,7 +257,7 @@
         transition: 0.3s;
 
         .icon {
-          width: 30%;
+          width: 20%;
           aspect-ratio: 1/1;
           background-repeat: no-repeat;
           background-size: contain;
@@ -274,7 +267,7 @@
           text-align: center;
           color: white;
           flex-grow: 1;
-          font-size: 16px;
+          font-size: 20px;
         }
       }
 
@@ -284,6 +277,335 @@
         border-bottom-style: solid;
         padding-bottom: 5px;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .navbar {
+    width: 100%;
+    height: 100%;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .logo {
+        height: 90%;
+        width: 15%;
+
+        font-size: 46px;
+      }
+
+      .logo:hover {
+        border-width: 5px;
+      }
+
+      .navigation {
+        width: 60%;
+        height: 100%;
+        padding: 0 20px 0 20px;
+
+        .button {
+          width: 20%;
+          height: 80%;
+          margin: 10px;
+
+          .icon {
+            width: 20%;
+          }
+
+          .text {
+            font-size: 32px;
+          }
+        }
+
+        .button:hover {
+          border-bottom-width: 2px;
+          padding-bottom: 5px;
+        }
+      }
+
+      .account-controls {
+        width: 25%;
+        height: 100%;
+
+        .session-button {
+          width: 10%;
+        }
+
+        .session-button:hover {
+          width: 15%;
+        }
+
+        .button {
+          width: 60%;
+          height: 80%;
+          margin: 10px;
+
+          .icon {
+            width: 20%;
+          }
+
+          .text {
+            font-size: 36px;
+          }
+        }
+
+        .button:hover {
+          border-bottom-width: 2px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+
+  .navbar {
+    width: 100%;
+    height: 100%;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .logo {
+        height: 90%;
+        width: 15%;
+
+        font-size: 36px;
+      }
+
+      .logo:hover {
+        border-width: 3px;
+      }
+
+      .navigation {
+        width: 60%;
+        height: 100%;
+        padding: 0 20px 0 20px;
+
+        .button {
+          width: 20%;
+          height: 80%;
+          margin: 10px;
+
+          .icon {
+            width: 30%;
+          }
+
+          .text {
+            font-size: 20px;
+          }
+        }
+
+        .button:hover {
+          border-bottom-width: 2px;
+          padding-bottom: 5px;
+        }
+      }
+
+      .account-controls {
+        width: 25%;
+        height: 100%;
+
+        .session-button {
+          width: 10%;
+        }
+
+        .session-button:hover {
+          width: 15%;
+        }
+
+        .button {
+          width: 60%;
+          height: 80%;
+          margin: 10px;
+
+          .icon {
+            width: 20%;
+          }
+
+          .text {
+            font-size: 20px;
+          }
+        }
+
+        .button:hover {
+          border-bottom-width: 2px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .navbar {
+    width: 100%;
+    height: 100%;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .logo {
+        height: 90%;
+        width: 15%;
+
+        font-size: 28px;
+      }
+
+      .logo:hover {
+        border-width: 3px;
+      }
+
+      .navigation {
+        width: 60%;
+        height: 100%;
+        padding: 0 20px 0 20px;
+
+        .button {
+          width: 20%;
+          height: 80%;
+          margin: 10px;
+
+          .icon {
+            width: 30%;
+          }
+
+          .text {
+            font-size: 20px;
+          }
+        }
+
+        .button:hover {
+          border-bottom-width: 2px;
+          padding-bottom: 5px;
+        }
+      }
+
+      .account-controls {
+        width: 25%;
+        height: 100%;
+
+        .session-button {
+          width: 10%;
+        }
+
+        .session-button:hover {
+          width: 15%;
+        }
+
+        .button {
+          width: 60%;
+          height: 80%;
+          margin: 10px;
+
+          .icon {
+            width: 20%;
+          }
+
+          .text {
+            font-size: 18px;
+          }
+        }
+
+        .button:hover {
+          border-bottom-width: 2px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    width: 100%;
+    height: 100%;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .logo {
+        height: 90%;
+        width: 15%;
+
+        font-size: 24px;
+      }
+
+      .logo:hover {
+        border-width: 3px;
+      }
+
+      .navigation {
+        width: 60%;
+        height: 100%;
+        padding: 0 20px 0 20px;
+
+        .button {
+          width: 20%;
+          height: 80%;
+          margin: 10px;
+
+          .icon {
+            width: 30%;
+          }
+
+          .text {
+            font-size: 14px;
+          }
+        }
+
+        .button:hover {
+          border-bottom-width: 2px;
+          padding-bottom: 5px;
+        }
+      }
+
+      .account-controls {
+        width: 25%;
+        height: 100%;
+
+        .session-button {
+          width: 10%;
+        }
+
+        .session-button:hover {
+          width: 20%;
+        }
+
+        .button {
+          width: 60%;
+          height: 80%;
+          margin: 10px;
+
+          .icon {
+            width: 20%;
+          }
+
+          .text {
+            font-size: 14px;
+          }
+        }
+
+        .button:hover {
+          border-bottom-width: 2px;
+          padding-bottom: 5px;
+        }
       }
     }
   }
@@ -311,267 +633,87 @@
 
     .wrapper {
       display: none;
-      flex-direction: row;
-      box-sizing: border-box;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      padding-left: 20px;
-      padding-right: 20px;
-      background-color: #FF891C;
-      transition: 0.3s;
-
-      .logo {
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 90%;
-        width: 15%;
-
-        font-size: 36px;
-        color: #FF891C;
-        background-color: white;
-        transition: 0.3s;
-      }
-
-      .logo:hover {
-        border-style: solid;
-        border-width: 3px;
-        border-color: #FF891C75;
-        cursor: pointer;
-      }
-
-      .navigation {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 60%;
-        height: 100%;
-        padding: 0 20px 0 20px;
-
-        .button {
-          display: flex;
-          box-sizing: border-box;
-          align-items: center;
-          width: 20%;
-          height: 80%;
-          margin: 10px;
-          transition: 0.3s;
-
-          .icon {
-            width: 30%;
-            aspect-ratio: 1/1;
-            background-repeat: no-repeat;
-            background-size: contain;
-          }
-
-          .text {
-            text-align: center;
-            color: white;
-            flex-grow: 1;
-            font-size: 20px;
-          }
-        }
-
-        .button:hover {
-          border-bottom-color: white;
-          border-bottom-width: 2px;
-          border-bottom-style: solid;
-          padding-bottom: 5px;
-          cursor: pointer;
-        }
-      }
-
-      .account-controls {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        width: 25%;
-        height: 100%;
-
-        .session-button {
-          width: 10%;
-          aspect-ratio: 1/1;
-          background-repeat: no-repeat;
-          background-size: contain;
-          transition: 0.3s;
-        }
-
-        .session-button:hover {
-          width: 15%;
-          cursor: pointer;
-        }
-
-        .button {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          box-sizing: border-box;
-          width: 60%;
-          height: 80%;
-          margin: 10px;
-          transition: 0.3s;
-
-          .icon {
-            width: 20%;
-            aspect-ratio: 1/1;
-            background-repeat: no-repeat;
-            background-size: contain;
-          }
-
-          .text {
-            text-align: center;
-            color: white;
-            flex-grow: 1;
-            font-size: 20px;
-          }
-        }
-
-        .button:hover {
-          border-bottom-color: white;
-          border-bottom-width: 2px;
-          border-bottom-style: solid;
-          padding-bottom: 5px;
-          cursor: pointer;
-        }
-      }
     }
   }
 
   .navbar-mobile {
+    display: block;
     width: 100%;
     height: 100%;
-    background-color: #FF891C;
-    transition: 0.3s;
 
     .wrapper {
-      display: flex;
       flex-direction: column;
-      box-sizing: border-box;
-      align-items: center;
       width: 100%;
       height: 100%;
       padding-left: 20px;
       padding-right: 20px;
-      background-color: #FF891C;
-      transition: 0.3s;
 
       .logo {
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 10%;
         width: 90%;
 
         font-size: 36px;
-        color: #FF891C;
-        background-color: white;
-        transition: 0.3s;
       }
 
       .logo:hover {
-        border-style: solid;
         border-width: 3px;
-        border-color: #FF891C75;
-        cursor: pointer;
       }
 
       .navigation {
-        display: flex;
         flex-direction: column;
-        align-items: center;
         width: 90%;
         height: 60%;
         padding: 0 20px 0 20px;
 
         .button {
-          display: flex;
-          box-sizing: border-box;
-          align-items: center;
           width: 90%;
           height: 20%;
           margin: 10px;
-          transition: 0.3s;
 
           .icon {
-            width: 20%;
-            aspect-ratio: 1/1;
-            background-repeat: no-repeat;
-            background-size: contain;
+            width: 48px;
           }
 
           .text {
-            text-align: center;
-            color: white;
-            flex-grow: 1;
             font-size: 20px;
           }
         }
 
         .button:hover {
-          border-bottom-color: white;
           border-bottom-width: 2px;
-          border-bottom-style: solid;
           padding-bottom: 5px;
-          cursor: pointer;
         }
       }
 
       .account-controls {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
         width: 90%;
         height: 20%;
 
         .session-button {
-          width: 15%;
-          aspect-ratio: 1/1;
-          background-repeat: no-repeat;
-          background-size: contain;
-          transition: 0.3s;
+          width: 48px;
         }
 
         .session-button:hover {
-          width: 20%;
-          cursor: pointer;
+          width: 64px;
         }
 
         .button {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          box-sizing: border-box;
           width: 60%;
           height: 80%;
           margin: 10px;
-          transition: 0.3s;
 
           .icon {
-            width: 20%;
-            aspect-ratio: 1/1;
-            background-repeat: no-repeat;
-            background-size: contain;
+            width: 48px;
           }
 
           .text {
-            text-align: center;
-            color: white;
-            flex-grow: 1;
             font-size: 20px;
           }
         }
 
         .button:hover {
-          border-bottom-color: white;
           border-bottom-width: 2px;
-          border-bottom-style: solid;
           padding-bottom: 5px;
-          cursor: pointer;
         }
       }
     }
@@ -579,11 +721,219 @@
 }
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
+  .navbar-toggler {
+    aspect-ratio: 1/1;
+    width: 10%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 5px;
+  }
 
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #FF891C;
+    transition: 0.3s;
+
+    .wrapper {
+      display: none;
+    }
+  }
+
+  .navbar-mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    .wrapper {
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .logo {
+        height: 10%;
+        width: 90%;
+
+        font-size: 36px;
+      }
+
+      .logo:hover {
+        border-width: 3px;
+      }
+
+      .navigation {
+        flex-direction: column;
+        width: 90%;
+        height: 60%;
+        padding: 0 20px 0 20px;
+
+        .button {
+          width: 90%;
+          height: 20%;
+          margin: 10px;
+
+          .icon {
+            width: 48px;
+          }
+
+          .text {
+            font-size: 20px;
+          }
+        }
+
+        .button:hover {
+          border-bottom-width: 2px;
+          padding-bottom: 5px;
+        }
+      }
+
+      .account-controls {
+        width: 90%;
+        height: 20%;
+
+        .session-button {
+          width: 48px;
+        }
+
+        .session-button:hover {
+          width: 64px;
+        }
+
+        .button {
+          width: 60%;
+          height: 80%;
+          margin: 10px;
+
+          .icon {
+            width: 48px;
+          }
+
+          .text {
+            font-size: 20px;
+          }
+        }
+
+        .button:hover {
+          border-bottom-width: 2px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 374px) {
+  .navbar-toggler {
+    aspect-ratio: 1/1;
+    width: 10%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 5px;
+  }
 
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #FF891C;
+    transition: 0.3s;
+
+    .wrapper {
+      display: none;
+    }
+  }
+
+  .navbar-mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    .wrapper {
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .logo {
+        height: 10%;
+        width: 90%;
+
+        font-size: 36px;
+      }
+
+      .logo:hover {
+        border-width: 3px;
+      }
+
+      .navigation {
+        flex-direction: column;
+        width: 90%;
+        height: 60%;
+        padding: 0 20px 0 20px;
+
+        .button {
+          width: 90%;
+          height: 20%;
+          margin: 10px;
+
+          .icon {
+            width: 48px;
+          }
+
+          .text {
+            font-size: 20px;
+          }
+        }
+
+        .button:hover {
+          border-bottom-width: 2px;
+          padding-bottom: 5px;
+        }
+      }
+
+      .account-controls {
+        width: 90%;
+        height: 20%;
+
+        .session-button {
+          width: 48px;
+        }
+
+        .session-button:hover {
+          width: 64px;
+        }
+
+        .button {
+          width: 60%;
+          height: 80%;
+          margin: 10px;
+
+          .icon {
+            width: 32px;
+          }
+
+          .text {
+            font-size: 16px;
+          }
+        }
+
+        .button:hover {
+          border-bottom-width: 2px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
 }
 
 
