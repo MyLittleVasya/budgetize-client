@@ -19,7 +19,7 @@ export class NavbarComponent {
   navbar_collapsed = true
 
   navbar_toggle() {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth < 768) {
       if (this.navbar_collapsed) {
         this.elementReference.nativeElement.style.height = '100%';
         this.navbar_collapsed = false;

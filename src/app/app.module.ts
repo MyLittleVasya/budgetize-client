@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import {NgOptimizedImage} from "@angular/common";
 import {BarChartModule, PieChartModule, TreeMapModule} from "@swimlane/ngx-charts";
-import {RouterModule, Routes} from "@angular/router";
+import {ExtraOptions, RouterModule, Routes} from "@angular/router";
 import { NavbarComponent } from './main/navbar/navbar.component';
 import { OverviewComponent } from './main/content/overview/overview.component';
 import { BudgetConfigComponent } from './main/content/budget-config/budget-config.component';
@@ -28,6 +28,11 @@ const routes: Routes = [
 
 ]
 
+const routerOptions: ExtraOptions = {
+  useHash: true,
+  anchorScrolling: 'enabled',
+};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +51,7 @@ const routes: Routes = [
     NgOptimizedImage,
     PieChartModule,
     BarChartModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, routerOptions),
     TreeMapModule,
   ],
   providers: [],

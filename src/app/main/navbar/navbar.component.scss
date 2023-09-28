@@ -200,6 +200,7 @@
         height: 20%;
         margin: 10px;
         transition: 0.3s;
+        border-bottom: white 0 solid;
 
         .icon {
           width: 20%;
@@ -217,9 +218,7 @@
       }
 
       .button:hover {
-        border-bottom-color: white;
-        border-bottom-width: 2px;
-        border-bottom-style: solid;
+        border-bottom: white 2px solid;
         padding-bottom: 5px;
         cursor: pointer;
       }
@@ -255,6 +254,7 @@
         height: 80%;
         margin: 10px;
         transition: 0.3s;
+        border-bottom: white 0 solid;
 
         .icon {
           width: 20%;
@@ -272,9 +272,7 @@
       }
 
       .button:hover {
-        border-bottom-color: white;
-        border-bottom-width: 2px;
-        border-bottom-style: solid;
+        border-bottom: white 2px solid;
         padding-bottom: 5px;
         cursor: pointer;
       }
@@ -313,6 +311,7 @@
           width: 20%;
           height: 80%;
           margin: 10px;
+          border-bottom: white 0 solid;
 
           .icon {
             width: 20%;
@@ -324,8 +323,7 @@
         }
 
         .button:hover {
-          border-bottom-width: 2px;
-          padding-bottom: 5px;
+          border-bottom: white 2px solid;
         }
       }
 
@@ -345,6 +343,7 @@
           width: 60%;
           height: 80%;
           margin: 10px;
+          border-bottom: white 0 solid;
 
           .icon {
             width: 20%;
@@ -356,8 +355,7 @@
         }
 
         .button:hover {
-          border-bottom-width: 2px;
-          padding-bottom: 5px;
+          border-bottom: white 2px solid;
         }
       }
     }
@@ -396,6 +394,7 @@
           width: 20%;
           height: 80%;
           margin: 10px;
+          border-bottom: white 0 solid;
 
           .icon {
             width: 30%;
@@ -407,7 +406,7 @@
         }
 
         .button:hover {
-          border-bottom-width: 2px;
+          border-bottom: white 2px solid;
           padding-bottom: 5px;
         }
       }
@@ -478,6 +477,7 @@
           width: 20%;
           height: 80%;
           margin: 10px;
+          border-bottom: white 0 solid;
 
           .icon {
             width: 30%;
@@ -489,7 +489,7 @@
         }
 
         .button:hover {
-          border-bottom-width: 2px;
+          border-bottom: white 2px solid;
           padding-bottom: 5px;
         }
       }
@@ -510,6 +510,7 @@
           width: 60%;
           height: 80%;
           margin: 10px;
+          border-bottom: white 0 solid;
 
           .icon {
             width: 20%;
@@ -521,7 +522,7 @@
         }
 
         .button:hover {
-          border-bottom-width: 2px;
+          border-bottom: white 2px solid;
           padding-bottom: 5px;
         }
       }
@@ -560,6 +561,7 @@
           width: 20%;
           height: 80%;
           margin: 10px;
+          border-bottom: white 0 solid;
 
           .icon {
             width: 30%;
@@ -571,7 +573,7 @@
         }
 
         .button:hover {
-          border-bottom-width: 2px;
+          border-bottom: white 2px solid;
           padding-bottom: 5px;
         }
       }
@@ -592,6 +594,7 @@
           width: 60%;
           height: 80%;
           margin: 10px;
+          border-bottom: white 0 solid;
 
           .icon {
             width: 20%;
@@ -603,7 +606,7 @@
         }
 
         .button:hover {
-          border-bottom-width: 2px;
+          border-bottom: white 2px solid;
           padding-bottom: 5px;
         }
       }
@@ -669,6 +672,7 @@
           width: 90%;
           height: 20%;
           margin: 10px;
+          border-bottom: white 0 solid;
 
           .icon {
             width: 48px;
@@ -680,7 +684,7 @@
         }
 
         .button:hover {
-          border-bottom-width: 2px;
+          border-bottom: white 2px solid;
           padding-bottom: 5px;
         }
       }
@@ -701,6 +705,7 @@
           width: 60%;
           height: 80%;
           margin: 10px;
+          border-bottom: white 0 solid;
 
           .icon {
             width: 48px;
@@ -712,7 +717,7 @@
         }
 
         .button:hover {
-          border-bottom-width: 2px;
+          border-bottom: white 2px solid;
           padding-bottom: 5px;
         }
       }
@@ -777,6 +782,7 @@
           width: 90%;
           height: 20%;
           margin: 10px;
+          border-bottom: white 0 solid;
 
           .icon {
             width: 48px;
@@ -788,7 +794,7 @@
         }
 
         .button:hover {
-          border-bottom-width: 2px;
+          border-bottom: white 2px solid;
           padding-bottom: 5px;
         }
       }
@@ -809,6 +815,7 @@
           width: 60%;
           height: 80%;
           margin: 10px;
+          border-bottom: white 0 solid;
 
           .icon {
             width: 48px;
@@ -820,7 +827,7 @@
         }
 
         .button:hover {
-          border-bottom-width: 2px;
+          border-bottom: white 2px solid;
           padding-bottom: 5px;
         }
       }
@@ -885,6 +892,7 @@
           width: 90%;
           height: 20%;
           margin: 10px;
+          border-bottom: white 0 solid;
 
           .icon {
             width: 48px;
@@ -896,7 +904,7 @@
         }
 
         .button:hover {
-          border-bottom-width: 2px;
+          border-bottom: white 2px solid;
           padding-bottom: 5px;
         }
       }
@@ -917,6 +925,8 @@
           width: 60%;
           height: 80%;
           margin: 10px;
+          border-bottom: white 0 solid;
+
 
           .icon {
             width: 32px;
@@ -928,7 +938,7 @@
         }
 
         .button:hover {
-          border-bottom-width: 2px;
+          border-bottom: white 2px solid;
           padding-bottom: 5px;
         }
       }
