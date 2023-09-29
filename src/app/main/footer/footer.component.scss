@@ -42,34 +42,318 @@
       border-color: #FF891C75;
       cursor: pointer;
     }
+
+    .contact {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: 15%;
+      height: 70%;
+      margin: 0 20px 0 20px;
+      color: #FF891C;
+      cursor: pointer;
+      transition: 0.1s;
+      .icon {
+        aspect-ratio: 1/1;
+        width: 32px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .text {
+        margin: 0 0 0 2px;
+        font-size: 16px;
+      }
+    }
+
+    .contact:hover {
+      border-bottom: #FF891C 3px solid;
+    }
   }
 }
 
 @media screen and (min-width: 2560px) {
+  :host {
+    height: 10vh;
+  }
 
+  .footer {
+
+    .wrapper {
+      flex-direction: row;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .logo {
+        height: 90%;
+        width: 15%;
+
+        font-size: 48px;
+      }
+
+      .contact {
+        max-width: 15%;
+        height: 70%;
+        margin: 0 20px 0 20px;
+        .icon {
+          width: 64px;
+        }
+
+        .text {
+          margin: 0 0 0 2px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
+  :host {
+    height: 10vh;
+  }
 
+  .footer {
+
+    .wrapper {
+      flex-direction: row;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .logo {
+        height: 90%;
+        width: 15%;
+
+        font-size: 36px;
+      }
+
+      .contact {
+        max-width: 15%;
+        height: 70%;
+        margin: 0 20px 0 20px;
+        .icon {
+          width: 32px;
+        }
+
+        .text {
+          margin: 0 0 0 2px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
+  :host {
+    height: 10vh;
+  }
 
+  .footer {
+
+    .wrapper {
+      flex-direction: row;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .logo {
+        height: 90%;
+        width: 15%;
+
+        font-size: 30px;
+      }
+
+      .contact {
+        max-width: 15%;
+        height: 70%;
+        margin: 0 20px 0 20px;
+        .icon {
+          width: 32px;
+        }
+
+        .text {
+          margin: 0 0 0 2px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  :host {
+    height: 200px;
+  }
 
+  .footer {
+
+    .wrapper {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .logo {
+        height: 25%;
+        width: 70%;
+
+        font-size: 30px;
+      }
+
+      .contact {
+        min-width: 30%;
+        max-width: 40%;
+        justify-content: center;
+        height: 20%;
+        margin: 0 20px 0 20px;
+        .icon {
+          width: 32px;
+        }
+
+        .text {
+          margin: 0 0 0 2px;
+          font-size: 12px;
+        }
+      }
+
+      .contact:hover {
+        border-bottom: #FF891C 1px solid;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
+  :host {
+    height: 200px;
+  }
+
+  .footer {
+
+    .wrapper {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .logo {
+        height: 25%;
+        width: 70%;
+
+        font-size: 30px;
+      }
+
+      .contact {
+        min-width: 30%;
+        max-width: 40%;
+        justify-content: center;
+        height: 20%;
+        margin: 0 20px 0 20px;
+        .icon {
+          width: 32px;
+        }
+
+        .text {
+          margin: 0 0 0 2px;
+          font-size: 12px;
+        }
+      }
+
+      .contact:hover {
+        border-bottom: #FF891C 1px solid;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
+  :host {
+    height: 250px;
+  }
 
+  .footer {
+
+    .wrapper {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .logo {
+        height: 25%;
+        width: 70%;
+
+        font-size: 30px;
+      }
+
+      .contact {
+        min-width: 30%;
+        max-width: 40%;
+        justify-content: center;
+        height: 20%;
+        margin: 0 20px 0 20px;
+        .icon {
+          width: 16px;
+        }
+
+        .text {
+          margin: 0 0 0 2px;
+          font-size: 10px;
+        }
+      }
+
+      .contact:hover {
+        border-bottom: #FF891C 1px solid;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 374px) {
+  :host {
+    height: 250px;
+  }
 
+  .footer {
+
+    .wrapper {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .logo {
+        height: 25%;
+        width: 70%;
+
+        font-size: 30px;
+      }
+
+      .contact {
+        min-width: 30%;
+        max-width: 40%;
+        justify-content: center;
+        height: 20%;
+        margin: 0 20px 0 20px;
+        .icon {
+          width: 16px;
+        }
+
+        .text {
+          margin: 0 0 0 2px;
+          font-size: 10px;
+        }
+      }
+
+      .contact:hover {
+        border-bottom: #FF891C 1px solid;
+      }
+    }
+  }
 }
 
 

@@ -200,6 +200,171 @@
       }
     }
   }
+
+  .feature-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+
+    background-color: #0F6D5F;
+    color: #FF891C;
+
+    table {
+      width: 80%;
+      height: 80%;
+      text-align: center;
+      margin: 0;
+      border-spacing: 0;
+    }
+
+    thead {
+      margin-bottom: 5px;
+      height: 50px;
+    }
+
+    tfoot {
+      td {
+        padding: 5px;
+      }
+    }
+    caption {
+      font-weight: 700;
+      font-size: 36px;
+    }
+
+    th {
+      background-color: #EEEAEA;
+      font-size: 16px;
+      border-bottom: #FF891C 2px solid;
+    }
+
+    tr {
+      margin: 5px;
+    }
+
+    td {
+      background-color: #EEEAEA;
+      font-size: 14px;
+    }
+
+    .success {
+      background-color: #8ad58a;
+      color: black;
+    }
+
+    .warning {
+      background-color: #FF891C;
+      color: white;
+    }
+  }
+
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 575px;
+
+    .header {
+      font-weight: 700;
+      font-size: 36px;
+
+      color: #FF891C;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      height: 80%;
+
+      border: #FF891C 1px solid;
+
+      label {
+        color: #FF891C;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      input {
+        width: 60%;
+        height: 30px;
+        text-align: center;
+        border: #FF891C 0 solid;
+        font-size: 16px;
+      }
+
+      input:focus, textarea:focus {
+        box-shadow: none;
+        outline: none;
+        border: #FF891C 3px solid;
+      }
+
+      textarea {
+        min-width: 60%;
+        max-width: 60%;
+        min-height: 50px;
+        max-height: 80px;
+        text-align: center;
+        border: #FF891C 0 solid;
+        font-size: 16px;
+      }
+
+
+      select {
+        width: 40%;
+        border: #FF891C 0 solid;
+        padding: 5px;
+        font-size: 16px;
+
+        option {
+          margin-bottom: 2px;
+          text-align: center;
+        }
+
+        option:checked {
+          background-color: rgba(255, 137, 28, 0.5);
+        }
+      }
+
+      select:focus {
+        box-shadow: none;
+        outline: none;
+      }
+
+      .checkbox {
+        height: 32px;
+      }
+
+      .checkbox:active {
+        background-color: #FF891C;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        height: 10%;
+        margin: 5px;
+
+        font-size: 32px;
+        color: #FF891C;
+        border: #FF891C 5px solid;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background-color: #FF891C;
+        color: white;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 2560px) {
@@ -281,6 +446,132 @@
         }
       }
 
+    }
+
+    .feature-article {
+      width: 100%;
+      height: 500px;
+      padding: 10px;
+
+      .image {
+        width: 30%;
+        height: 90%;
+      }
+
+      .description {
+        width: 70%;
+        height: 90%;
+        padding: 5px;
+
+        li {
+          width: 30%;
+          height: 30%;
+          margin: 5px;
+
+          border-bottom: #FF891C 3px solid;
+
+          em {
+            font-size: 24px;
+          }
+
+          p {
+            font-size: 20px;
+          }
+        }
+
+        li::marker {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .feature-table {
+      width: 100%;
+      height: 500px;
+
+
+      table {
+        width: 80%;
+        height: 80%;
+      }
+
+      thead {
+        margin-bottom: 5px;
+        height: 50px;
+      }
+
+      tfoot {
+        td {
+          padding: 5px;
+        }
+      }
+      caption {
+        font-weight: 700;
+        font-size: 36px;
+      }
+
+      th {
+        font-size: 24px;
+      }
+
+      tr {
+        margin: 5px;
+      }
+
+      td {
+        font-size: 20px;
+      }
+    }
+
+    .feedback {
+      width: 100%;
+      height: 700px;
+
+      .header {
+        font-weight: 700;
+        font-size: 36px;
+
+      }
+
+      form {
+        width: 60%;
+        height: 90%;
+
+
+        label {
+          font-size: 16px;
+        }
+
+        input {
+          width: 60%;
+          height: 60px;
+          font-size: 24px;
+        }
+
+        textarea {
+          min-width: 60%;
+          max-width: 60%;
+          min-height: 50px;
+          max-height: 80px;
+          text-align: center;
+          font-size: 24px;
+        }
+
+
+        select {
+          width: 40%;
+          padding: 5px;
+          font-size: 24px;
+        }
+
+        button {
+          width: 30%;
+          height: 10%;
+          margin: 5px;
+
+          font-size: 32px;
+        }
+      }
     }
   }
 }
@@ -366,6 +657,129 @@
       }
 
     }
+
+    .feature-article {
+      width: 100%;
+      height: 400px;
+      padding: 10px;
+
+      .image {
+        width: 30%;
+        height: 90%;
+      }
+
+      .description {
+        width: 70%;
+        height: 90%;
+        padding: 5px;
+
+        li {
+          width: 30%;
+          height: 30%;
+          margin: 5px;
+
+          border-bottom: #FF891C 3px solid;
+
+          em {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+
+        li::marker {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .feature-table {
+      width: 100%;
+      height: 450px;
+
+
+      table {
+        width: 80%;
+        height: 80%;
+      }
+
+      thead {
+        margin-bottom: 5px;
+        height: 50px;
+      }
+
+      tfoot {
+        td {
+          padding: 5px;
+        }
+      }
+      caption {
+        font-weight: 700;
+        font-size: 36px;
+      }
+
+      th {
+        font-size: 16px;
+      }
+
+      tr {
+        margin: 5px;
+      }
+
+      td {
+        font-size: 14px;
+      }
+    }
+
+    .feedback {
+      width: 100%;
+      height: 575px;
+
+      .header {
+        font-weight: 700;
+        font-size: 36px;
+
+      }
+
+      form {
+        width: 60%;
+        height: 80%;
+
+
+        label {
+          font-size: 16px;
+        }
+
+        input {
+          width: 60%;
+          height: 30px;
+        }
+
+        textarea {
+          min-width: 60%;
+          max-width: 60%;
+          min-height: 50px;
+          max-height: 80px;
+          text-align: center;
+        }
+
+
+        select {
+          width: 40%;
+          padding: 5px;
+        }
+
+        button {
+          width: 30%;
+          height: 10%;
+          margin: 5px;
+
+          font-size: 32px;
+        }
+      }
+    }
   }
 }
 
@@ -449,6 +863,129 @@
       }
 
     }
+
+    .feature-article {
+      width: 100%;
+      height: 400px;
+      padding: 10px;
+
+      .image {
+        width: 30%;
+        height: 90%;
+      }
+
+      .description {
+        width: 70%;
+        height: 90%;
+        padding: 5px;
+
+        li {
+          width: 30%;
+          height: 30%;
+          margin: 5px;
+
+          border-bottom: #FF891C 3px solid;
+
+          em {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+
+        li::marker {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .feature-table {
+      width: 100%;
+      height: 450px;
+
+
+      table {
+        width: 80%;
+        height: 80%;
+      }
+
+      thead {
+        margin-bottom: 5px;
+        height: 50px;
+      }
+
+      tfoot {
+        td {
+          padding: 5px;
+        }
+      }
+      caption {
+        font-weight: 700;
+        font-size: 36px;
+      }
+
+      th {
+        font-size: 16px;
+      }
+
+      tr {
+        margin: 5px;
+      }
+
+      td {
+        font-size: 14px;
+      }
+    }
+
+    .feedback {
+      width: 100%;
+      height: 575px;
+
+      .header {
+        font-weight: 700;
+        font-size: 36px;
+
+      }
+
+      form {
+        width: 60%;
+        height: 80%;
+
+
+        label {
+          font-size: 16px;
+        }
+
+        input {
+          width: 60%;
+          height: 30px;
+        }
+
+        textarea {
+          min-width: 60%;
+          max-width: 60%;
+          min-height: 50px;
+          max-height: 80px;
+          text-align: center;
+        }
+
+
+        select {
+          width: 40%;
+          padding: 5px;
+        }
+
+        button {
+          width: 30%;
+          height: 10%;
+          margin: 5px;
+
+          font-size: 32px;
+        }
+      }
+    }
   }
 }
 
@@ -531,6 +1068,129 @@
         }
       }
 
+    }
+
+    .feature-article {
+      width: 100%;
+      height: 400px;
+      padding: 10px;
+
+      .image {
+        width: 40%;
+        height: 90%;
+      }
+
+      .description {
+        width: 60%;
+        height: 90%;
+        padding: 5px;
+
+        li {
+          width: 30%;
+          height: 30%;
+          margin: 5px;
+
+          border-bottom: #FF891C 3px solid;
+
+          em {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+
+        li::marker {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .feature-table {
+      width: 100%;
+      height: 450px;
+
+
+      table {
+        width: 80%;
+        height: 80%;
+      }
+
+      thead {
+        margin-bottom: 5px;
+        height: 50px;
+      }
+
+      tfoot {
+        td {
+          padding: 5px;
+        }
+      }
+      caption {
+        font-weight: 700;
+        font-size: 36px;
+      }
+
+      th {
+        font-size: 16px;
+      }
+
+      tr {
+        margin: 5px;
+      }
+
+      td {
+        font-size: 14px;
+      }
+    }
+
+    .feedback {
+      width: 100%;
+      height: 575px;
+
+      .header {
+        font-weight: 700;
+        font-size: 28px;
+
+      }
+
+      form {
+        width: 60%;
+        height: 80%;
+
+
+        label {
+          font-size: 16px;
+        }
+
+        input {
+          width: 60%;
+          height: 30px;
+        }
+
+        textarea {
+          min-width: 60%;
+          max-width: 60%;
+          min-height: 50px;
+          max-height: 80px;
+          text-align: center;
+        }
+
+
+        select {
+          width: 40%;
+          padding: 5px;
+        }
+
+        button {
+          width: 50%;
+          height: 10%;
+          margin: 5px;
+
+          font-size: 32px;
+        }
+      }
     }
   }
 }
@@ -618,6 +1278,134 @@
       }
 
     }
+
+    .feature-article {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 400px;
+      padding: 10px;
+
+      .image {
+        display: none;
+        width: 40%;
+        height: 90%;
+      }
+
+      .description {
+        width: 90%;
+        height: 90%;
+        padding: 5px;
+
+        li {
+          width: 30%;
+          height: 30%;
+          margin: 5px;
+
+          border-bottom: #FF891C 3px solid;
+
+          em {
+            font-size: 14px;
+          }
+
+          p {
+            font-size: 10px;
+          }
+        }
+
+        li::marker {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .feature-table {
+      width: 100%;
+      height: 450px;
+
+
+      table {
+        width: 90%;
+        height: 90%;
+      }
+
+      thead {
+        margin-bottom: 5px;
+        height: 50px;
+      }
+
+      tfoot {
+        td {
+          padding: 5px;
+        }
+      }
+      caption {
+        font-weight: 700;
+        font-size: 24px;
+      }
+
+      th {
+        font-size: 14px;
+      }
+
+      tr {
+        margin: 5px;
+      }
+
+      td {
+        font-size: 12px;
+      }
+    }
+
+    .feedback {
+      width: 100%;
+      height: 575px;
+
+      .header {
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+
+      }
+
+      form {
+        width: 80%;
+        height: 80%;
+
+
+        label {
+          font-size: 12px;
+        }
+
+        input {
+          width: 60%;
+          height: 30px;
+        }
+
+        textarea {
+          min-width: 60%;
+          max-width: 60%;
+          min-height: 50px;
+          max-height: 80px;
+          text-align: center;
+        }
+
+
+        select {
+          width: 40%;
+          padding: 5px;
+        }
+
+        button {
+          width: 50%;
+          height: 10%;
+          margin: 5px;
+
+          font-size: 32px;
+        }
+      }
+    }
   }
 }
 
@@ -704,6 +1492,134 @@
       }
 
     }
+
+    .feature-article {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 400px;
+      padding: 10px;
+
+      .image {
+        display: none;
+        width: 40%;
+        height: 90%;
+      }
+
+      .description {
+        width: 90%;
+        height: 90%;
+        padding: 5px;
+
+        li {
+          width: 40%;
+          height: 30%;
+          margin: 5px;
+
+          border-bottom: #FF891C 3px solid;
+
+          em {
+            font-size: 12px;
+          }
+
+          p {
+            font-size: 10px;
+          }
+        }
+
+        li::marker {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .feature-table {
+      width: 100%;
+      height: 450px;
+
+
+      table {
+        width: 90%;
+        height: 90%;
+      }
+
+      thead {
+        margin-bottom: 5px;
+        height: 50px;
+      }
+
+      tfoot {
+        td {
+          padding: 5px;
+        }
+      }
+      caption {
+        font-weight: 700;
+        font-size: 24px;
+      }
+
+      th {
+        font-size: 14px;
+      }
+
+      tr {
+        margin: 5px;
+      }
+
+      td {
+        font-size: 12px;
+      }
+    }
+
+    .feedback {
+      width: 100%;
+      height: 575px;
+
+      .header {
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+
+      }
+
+      form {
+        width: 80%;
+        height: 80%;
+
+
+        label {
+          font-size: 12px;
+        }
+
+        input {
+          width: 60%;
+          height: 30px;
+        }
+
+        textarea {
+          min-width: 60%;
+          max-width: 60%;
+          min-height: 50px;
+          max-height: 80px;
+          text-align: center;
+        }
+
+
+        select {
+          width: 40%;
+          padding: 5px;
+        }
+
+        button {
+          width: 50%;
+          height: 10%;
+          margin: 5px;
+
+          font-size: 32px;
+        }
+      }
+    }
   }
 }
 
@@ -789,6 +1705,134 @@
         }
       }
 
+    }
+
+    .feature-article {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 400px;
+      padding: 10px;
+
+      .image {
+        display: none;
+        width: 40%;
+        height: 90%;
+      }
+
+      .description {
+        width: 90%;
+        height: 90%;
+        padding: 5px;
+
+        li {
+          width: 40%;
+          height: 30%;
+          margin: 5px;
+
+          border-bottom: #FF891C 3px solid;
+
+          em {
+            font-size: 12px;
+          }
+
+          p {
+            font-size: 10px;
+          }
+        }
+
+        li::marker {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .feature-table {
+      width: 100%;
+      height: 450px;
+
+
+      table {
+        width: 90%;
+        height: 90%;
+      }
+
+      thead {
+        margin-bottom: 5px;
+        height: 50px;
+      }
+
+      tfoot {
+        td {
+          padding: 5px;
+        }
+      }
+      caption {
+        font-weight: 700;
+        font-size: 24px;
+      }
+
+      th {
+        font-size: 14px;
+      }
+
+      tr {
+        margin: 5px;
+      }
+
+      td {
+        font-size: 12px;
+      }
+    }
+
+    .feedback {
+      width: 100%;
+      height: 575px;
+
+      .header {
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+
+      }
+
+      form {
+        width: 80%;
+        height: 80%;
+
+
+        label {
+          font-size: 12px;
+        }
+
+        input {
+          width: 60%;
+          height: 30px;
+        }
+
+        textarea {
+          min-width: 60%;
+          max-width: 60%;
+          min-height: 50px;
+          max-height: 80px;
+          text-align: center;
+        }
+
+
+        select {
+          width: 40%;
+          padding: 5px;
+        }
+
+        button {
+          width: 50%;
+          height: 10%;
+          margin: 5px;
+
+          font-size: 32px;
+        }
+      }
     }
   }
 }
