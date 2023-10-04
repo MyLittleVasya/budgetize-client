@@ -3,11 +3,11 @@
   <nav class="wrapper">
     <div class="logo" [routerLink]="[{ outlets: { 'content-router': ['lab'] } }]" (click)="navbar_toggle()">Deliverize</div>
     <div class="navigation">
-      <div class="button" (click)="navbar_toggle()">
+      <div class="button" routerLink="/main" (click)="navbar_toggle()">
         <div class="icon home-icon"></div>
         <div class="text">Home</div>
       </div>
-      <div class="button" (click)="navbar_toggle()">
+      <div class="button" [routerLink]="[{ outlets: { 'content-router': ['services'] } }]" (click)="navbar_toggle()">
         <div class="icon services-icon"></div>
         <div class="text">Services</div>
       </div>

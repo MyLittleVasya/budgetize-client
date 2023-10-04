@@ -1,0 +1,373 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  min-height: 80vh;
+
+  .services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+
+    .card-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+      height: 70vh;
+
+      margin: 0 10px 0 10px;
+      border: #FF891C 3px solid;
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 15%;
+
+        text-align: center;
+        font-size: 36px;
+        color: white;
+        background-color: #FF891C;
+      }
+
+      .img {
+        width: 100%;
+        height: 70%;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 15%;
+
+        font-size: 32px;
+        color: #FF891C;
+        background-color: white;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: #FF891C;
+        color: white;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 2560px) {
+  .wrapper {
+    flex-direction: column;
+
+    padding: 20px;
+    min-height: 80vh;
+
+    .services {
+      flex-direction: row;
+
+      width: 90%;
+
+      .card-item {
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        height: 70vh;
+
+        margin: 0 10px 0 10px;
+
+        .header {
+          width: 100%;
+          height: 15%;
+
+          font-size: 40px;
+        }
+
+        .img {
+          width: 100%;
+          height: 70%;
+        }
+
+        .button {
+          width: 100%;
+          height: 15%;
+
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .wrapper {
+    flex-direction: column;
+
+    padding: 20px;
+    min-height: 80vh;
+
+    .services {
+      flex-direction: row;
+
+      width: 90%;
+
+      .card-item {
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        height: 70vh;
+
+        margin: 0 10px 0 10px;
+
+        .header {
+          width: 100%;
+          height: 15%;
+
+          font-size: 36px;
+        }
+
+        .img {
+          width: 100%;
+          height: 70%;
+        }
+
+        .button {
+          width: 100%;
+          height: 15%;
+
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .wrapper {
+    flex-direction: column;
+
+    padding: 20px;
+    min-height: 80vh;
+
+    .services {
+      flex-direction: row;
+
+      width: 90%;
+
+      .card-item {
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        height: 70vh;
+
+        margin: 0 10px 0 10px;
+
+        .header {
+          width: 100%;
+          height: 15%;
+
+          font-size: 28px;
+        }
+
+        .img {
+          width: 100%;
+          height: 70%;
+        }
+
+        .button {
+          width: 100%;
+          height: 15%;
+
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    flex-direction: column;
+
+    padding: 20px;
+    min-height: 80vh;
+
+    .services {
+      flex-direction: row;
+
+      width: 90%;
+
+      .card-item {
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        height: 70vh;
+
+        margin: 10px;
+
+        .header {
+          width: 100%;
+          height: 15%;
+
+          font-size: 28px;
+        }
+
+        .img {
+          width: 100%;
+          height: 70%;
+        }
+
+        .button {
+          width: 100%;
+          height: 15%;
+
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .wrapper {
+    flex-direction: column;
+
+    padding: 5px;
+    min-height: 80vh;
+
+    .services {
+      flex-direction: row;
+
+      width: 90%;
+
+      .card-item {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 50vh;
+
+        margin: 10px;
+
+        .header {
+          width: 100%;
+          height: 15%;
+
+          font-size: 28px;
+        }
+
+        .img {
+          width: 100%;
+          height: 70%;
+        }
+
+        .button {
+          width: 100%;
+          height: 15%;
+
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .wrapper {
+    flex-direction: column;
+
+    padding: 5px;
+    min-height: 80vh;
+
+    .services {
+      flex-direction: row;
+
+      width: 90%;
+
+      .card-item {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 50vh;
+
+        margin: 10px;
+
+        .header {
+          width: 100%;
+          height: 15%;
+
+          font-size: 28px;
+        }
+
+        .img {
+          width: 100%;
+          height: 70%;
+        }
+
+        .button {
+          width: 100%;
+          height: 15%;
+
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .wrapper {
+    flex-direction: column;
+
+    padding: 5px;
+    min-height: 80vh;
+
+    .services {
+      flex-direction: row;
+
+      width: 90%;
+
+      .card-item {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: 50vh;
+
+        margin: 10px;
+
+        .header {
+          width: 100%;
+          height: 15%;
+
+          font-size: 24px;
+        }
+
+        .img {
+          width: 100%;
+          height: 70%;
+        }
+
+        .button {
+          width: 100%;
+          height: 15%;
+
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

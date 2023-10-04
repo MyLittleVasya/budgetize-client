@@ -6,14 +6,12 @@ import {NgOptimizedImage} from "@angular/common";
 import {BarChartModule, PieChartModule, TreeMapModule} from "@swimlane/ngx-charts";
 import {ExtraOptions, RouterModule, Routes} from "@angular/router";
 import { NavbarComponent } from './main/navbar/navbar.component';
-import { OverviewComponent } from './main/content/overview/overview.component';
-import { BudgetConfigComponent } from './main/content/budget-config/budget-config.component';
-import { AddOperationComponent } from './main/content/add-operation/add-operation.component';
 import { ProfileComponent } from './main/content/profile/profile.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MainComponent } from './main/main.component';
 import { Homelab2Component } from './main/content/homelab2/homelab2.component';
 import { FooterComponent } from './main/footer/footer.component';
+import { ServicesComponent } from './main/content/services/services.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full'},
@@ -21,8 +19,7 @@ const routes: Routes = [
   { path: 'main', component: MainComponent,
     children: [
       { path: 'lab', component: Homelab2Component, outlet:'content-router'},
-      { path: 'overview', component: OverviewComponent, outlet:'content-router'},
-      { path: 'budget', component: BudgetConfigComponent, outlet:'content-router'},
+      { path: 'services', component: ServicesComponent, outlet:'content-router'},
     ]
   },
 
@@ -37,14 +34,12 @@ const routerOptions: ExtraOptions = {
   declarations: [
     AppComponent,
     NavbarComponent,
-    OverviewComponent,
-    BudgetConfigComponent,
-    AddOperationComponent,
     ProfileComponent,
     WelcomeComponent,
     MainComponent,
     Homelab2Component,
     FooterComponent,
+    ServicesComponent,
   ],
   imports: [
     BrowserModule,

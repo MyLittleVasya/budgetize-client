@@ -1,4 +1,4 @@
-<section class="wrapper">
+<div class="wrapper">
   <section class="background">
     <div class="promo">
       <article class="inner">
@@ -219,24 +219,30 @@
   <section class="feedback">
     <div class="header">Leave your feedback to make our service better!</div>
     <form>
-      <label for="email">Email</label><input id="email" name="email" type="email" required placeholder="example@com.ua"/>
-      <label for="fullName">Full Name</label><input id="fullName" name="fullName" type="text" required placeholder="Enter your full name"/>
-      <label for="feedback">What you can tell about our service?</label><textarea id="feedback" name="feedback" required placeholder="leave your feedback here"></textarea>
-      <label for="role">How you interacted with service?</label><select id="role" name="role" required multiple>
-        <option value="value1" selected>Client</option>
-        <option value="value2">Company</option>
-        <option value="value3">Partner</option>
-        <option value="value4">Employee</option>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="date" required placeholder="example@com.ua"/>
+      <label for="fullName">Full Name</label>
+      <input id="fullName" name="fullName" type="text" required placeholder="Enter your full name" maxlength="64"/>
+      <label for="feedback">What you can tell about our service?</label>
+      <textarea id="feedback" name="feedback" required placeholder="leave your feedback here" maxlength="255"></textarea>
+      <label for="role">How you interacted with service?</label>
+      <select id="role" name="role" required multiple>
+        <option value="1" selected>Client</option>
+        <option value="2">Company</option>
+        <option value="3">Partner</option>
+        <option value="4">Employee</option>
+        <option value="5">Other</option>
       </select>
-      <label for="quality">Please give a grade to our service</label><select id="quality" required name="quality">
-        <option value="value1">Excellent</option>
-        <option value="value2">Good</option>
-        <option value="value3" selected>Normal</option>
-        <option value="value4">Bad</option>
-        <option value="value5">Awful</option>
+      <label for="quality">Please give a grade to our service</label>
+      <select id="quality" required name="quality">
+        <option value="1">Excellent</option>
+        <option value="2">Good</option>
+        <option value="3" selected>Normal</option>
+        <option value="4">Bad</option>
+        <option value="5">Awful</option>
       </select>
       <label for="agreement">Do you give your agreement to process your personal data?</label><input id="agreement" type="checkbox" class="checkbox"/>
       <button type="submit" formmethod="post" [formAction]="null">Submit</button>
     </form>
   </section>
-</section>
+</div>
