@@ -12,17 +12,21 @@ import { MainComponent } from './main/main.component';
 import { Homelab2Component } from './main/content/homelab2/homelab2.component';
 import { FooterComponent } from './main/footer/footer.component';
 import { ServicesComponent } from './main/content/services/services.component';
+import { DeliveryFormComponent } from './main/content/delivery-form/delivery-form.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import {FormsModule} from "@angular/forms";
 
 const routes: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full'},
   { path: 'welcome', component: WelcomeComponent},
   { path: 'main', component: MainComponent,
     children: [
-      { path: 'lab', component: Homelab2Component, outlet:'content-router'},
-      { path: 'services', component: ServicesComponent, outlet:'content-router'},
+      { path: 'lab', component: Homelab2Component, outlet: 'content-router' },
+      { path: 'deliveryForm', component: DeliveryFormComponent, outlet: 'content-router' },
+      { path: 'services', component: ServicesComponent, outlet: 'content-router' },
     ]
   },
-
+  { path: '**', component: NotFoundComponent}
 ]
 
 const routerOptions: ExtraOptions = {
@@ -40,15 +44,18 @@ const routerOptions: ExtraOptions = {
     Homelab2Component,
     FooterComponent,
     ServicesComponent,
+    DeliveryFormComponent,
+    NotFoundComponent,
   ],
-  imports: [
-    BrowserModule,
-    NgOptimizedImage,
-    PieChartModule,
-    BarChartModule,
-    RouterModule.forRoot(routes, routerOptions),
-    TreeMapModule,
-  ],
+    imports: [
+        BrowserModule,
+        NgOptimizedImage,
+        PieChartModule,
+        BarChartModule,
+        RouterModule.forRoot(routes, routerOptions),
+        TreeMapModule,
+        FormsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,1607 @@
+:host {
+  padding: 5px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 80vh;
+  width: 100%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 700px;
+
+    background-color: white;
+
+    .controls {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      width: 100%;
+      height: 10%;
+
+      .button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        width: 15%;
+        height: 100%;
+
+        background-color: white;
+        color: #FF891C;
+        transition: 0.1s;
+        border: #FF891C 0 solid;
+        cursor: pointer;
+
+        .icon {
+          aspect-ratio: 1/1;
+          width: 64px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        span {
+          color: #FF891C;
+          font-size: 24px;
+          margin: 0 auto 0 auto;
+        }
+      }
+
+      .button:hover {
+        border: #FF891C 3px solid;
+      }
+    }
+
+    .form-input {
+      display: flex;
+      flex-direction: column;
+      height: 70%;
+      width: 30%;
+
+      margin: 0 10px 0 10px;
+
+      label {
+        height: 30%;
+        width: 100%;
+
+        margin-bottom: 5px;
+        border-bottom: #FF891C 2px solid;
+
+        color: #FF891C;
+        font-size: 16px;
+
+      }
+
+      input {
+        height: 80%;
+        width: 100%;
+
+        outline: none;
+        border: #FF891C 0 solid;
+
+        color: #FF891C;
+        text-align: center;
+        font-size: 36px;
+      }
+
+      input[type='checkbox'] {
+        accent-color: darkorange;
+      }
+
+      select {
+        height: 80%;
+        width: 100%;
+
+        text-align: center;
+        color: #FF891C;
+        font-size: 24px;
+
+        outline: none;
+        border: #FF891C 0 solid;
+      }
+
+      select:focus {
+        outline: none;
+        border: #FF891C 3px solid;
+      }
+    }
+
+    .address-block {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 90%;
+      height: 20%;
+      background-color: #EEEAEA;
+      margin: 5px;
+      padding: 10px;
+
+      .icon {
+        aspect-ratio: 1/1;
+        width: 64px;
+        margin: 0 auto 0 auto;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    .details-block {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      height: 20%;
+      background-color: #EEEAEA;
+      margin: 5px;
+      padding: 10px;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15%;
+      height: 10%;
+
+      border: #FF891C 3px solid;
+      color: #FF891C;
+      font-size: 24px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #FF891C;
+      color: white;
+    }
+  }
+
+  .modal-wrapper {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 15;
+    width: 100%;
+    height: 100vh;
+
+
+    background-color: rgb(0,0,0, 0.5);
+
+    .destination-input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      width: 80%;
+
+      padding: 10px;
+      background-color: white;
+
+      .header {
+        width: 100%;
+        border-bottom: #FF891C 2px solid;
+        color: #FF891C;
+        font-size: 36px;
+      }
+
+      input {
+        height: 10%;
+        width: 60%;
+
+        margin: 10px;
+
+        outline: none;
+        border: none;
+
+        text-align: center;
+        font-size: 24px;
+        background-color: #EEEAEA;
+      }
+
+      input:focus {
+        border: #FF891C 2px solid;
+      }
+
+      .departments {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+
+        padding: 5px;
+        height: 70%;
+        width: 70%;
+
+        background-color: #EEEAEA;
+
+        .department{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          width: 80%;
+          height: 30%;
+          padding: 5px;
+          margin: 5px;
+          background-color: white;
+
+          span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 80%;
+            width: 20%;
+            font-size: 16px;
+            color: #FF891C;
+            margin: 5px;
+
+            border: #FF891C 2px solid;
+          }
+
+          .location {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            height: 80%;
+
+            .address {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 50%;
+              width: 100%;
+
+              color: #FF891C;
+              font-weight: 700;
+              font-size: 16px;
+              border-bottom: #FF891C 3px solid;
+
+              text-align: center;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+            }
+
+            .features {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              height: 50%;
+              width: 100%;
+
+              .feature {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                height: 90%;
+
+                margin: 0 10px 0 10px;
+
+                .icon {
+                  aspect-ratio: 1/1;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  width: 32px;
+                }
+
+                .text {
+                  margin: 0 auto 0 auto;
+                  text-align: center;
+                  color: #FF891C;
+                  font-size: 14px;
+                }
+              }
+
+
+            }
+          }
+
+          .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15%;
+            height: 40%;
+            margin: 0 5px 0 5px;
+
+            transition: 0.1s;
+            cursor: pointer;
+
+            .icon {
+              aspect-ratio: 1/1;
+              height: 90%;
+
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+          }
+
+          .button:hover {
+            border: #FF891C 3px solid;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .wrapper {
+    min-height: 80vh;
+    width: 100%;
+
+    form {
+      width: 80%;
+      height: 700px;
+
+      .controls {
+        width: 100%;
+        height: 10%;
+
+        .button {
+          width: 15%;
+          height: 100%;
+
+          .icon {
+            width: 64px;
+          }
+
+          span {
+            font-size: 36px;
+          }
+        }
+      }
+
+      .form-input {
+        height: 70%;
+        width: 30%;
+
+        margin: 0 10px 0 10px;
+
+        label {
+          height: 30%;
+          width: 100%;
+
+          margin-bottom: 5px;
+          border-bottom: #FF891C 2px solid;
+          font-size: 18px;
+
+        }
+
+        input {
+          height: 80%;
+          width: 100%;
+
+          font-size: 36px;
+        }
+
+        select {
+          height: 80%;
+          width: 100%;
+
+          font-size: 24px;
+        }
+      }
+
+      .address-block {
+        flex-direction: row;
+        width: 70%;
+        height: 20%;
+        margin: 5px;
+        padding: 10px;
+
+        .icon {
+          width: 64px;
+        }
+      }
+
+      .details-block {
+        flex-direction: row;
+        width: 70%;
+        height: 20%;
+        margin: 5px;
+        padding: 10px;
+      }
+
+      button {
+        width: 15%;
+        height: 10%;
+
+        font-size: 24px;
+      }
+    }
+
+    .modal-wrapper {
+      width: 100%;
+      height: 100vh;
+
+
+      background-color: rgb(0,0,0, 0.5);
+
+      .destination-input {
+        height: 100%;
+        width: 80%;
+
+        padding: 10px;
+
+        .header {
+          width: 100%;
+          font-size: 36px;
+        }
+
+        input {
+          height: 10%;
+          width: 60%;
+
+          margin: 10px;
+
+          font-size: 36px;
+        }
+
+        .departments {
+          padding: 5px;
+          height: 70%;
+          width: 70%;
+
+          .department{
+            width: 80%;
+            height: 30%;
+            padding: 5px;
+            margin: 5px;
+
+            span {
+              height: 80%;
+              width: 20%;
+              font-size: 36px;
+              margin: 5px;
+            }
+
+            .location {
+              width: 60%;
+              height: 80%;
+
+              .address {
+                height: 50%;
+                width: 100%;
+
+                font-size: 24px;
+              }
+
+              .features {
+                height: 50%;
+                width: 100%;
+
+                .feature {
+                  height: 90%;
+
+                  margin: 0 10px 0 10px;
+
+                  .icon {
+                    width: 32px;
+                  }
+
+                  .text {
+                    font-size: 20px;
+                  }
+                }
+
+
+              }
+            }
+
+            .button {
+              width: 15%;
+              height: 40%;
+              margin: 0 5px 0 5px;
+
+
+              .icon {
+                height: 90%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .wrapper {
+    min-height: 80vh;
+    width: 100%;
+
+    form {
+      width: 90%;
+      height: 700px;
+
+      .controls {
+        width: 100%;
+        height: 10%;
+
+        .button {
+          width: 15%;
+          height: 100%;
+
+          .icon {
+            width: 64px;
+          }
+
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .form-input {
+        height: 70%;
+        width: 30%;
+
+        margin: 0 10px 0 10px;
+
+        label {
+          height: 30%;
+          width: 100%;
+
+          margin-bottom: 5px;
+          border-bottom: #FF891C 2px solid;
+          font-size: 16px;
+
+        }
+
+        input {
+          height: 80%;
+          width: 100%;
+
+          font-size: 36px;
+        }
+
+        select {
+          height: 80%;
+          width: 100%;
+
+          font-size: 24px;
+        }
+      }
+
+      .address-block {
+        flex-direction: row;
+        width: 90%;
+        height: 20%;
+        margin: 5px;
+        padding: 10px;
+
+        .icon {
+          width: 64px;
+        }
+      }
+
+      .details-block {
+        flex-direction: row;
+        width: 90%;
+        height: 20%;
+        margin: 5px;
+        padding: 10px;
+      }
+
+      button {
+        width: 15%;
+        height: 10%;
+
+        font-size: 24px;
+      }
+    }
+
+    .modal-wrapper {
+      width: 100%;
+      height: 100vh;
+
+
+      background-color: rgb(0,0,0, 0.5);
+
+      .destination-input {
+        height: 100%;
+        width: 80%;
+
+        padding: 10px;
+
+        .header {
+          width: 100%;
+          font-size: 36px;
+        }
+
+        input {
+          height: 10%;
+          width: 60%;
+
+          margin: 10px;
+
+          font-size: 24px;
+        }
+
+        .departments {
+          padding: 5px;
+          height: 70%;
+          width: 70%;
+
+          .department{
+            width: 80%;
+            height: 30%;
+            padding: 5px;
+            margin: 5px;
+
+            span {
+              height: 80%;
+              width: 20%;
+              font-size: 16px;
+              margin: 5px;
+            }
+
+            .location {
+              width: 60%;
+              height: 80%;
+
+              .address {
+                height: 50%;
+                width: 100%;
+
+                font-size: 16px;
+              }
+
+              .features {
+                height: 50%;
+                width: 100%;
+
+                .feature {
+                  height: 90%;
+
+                  margin: 0 10px 0 10px;
+
+                  .icon {
+                    width: 32px;
+                  }
+
+                  .text {
+                    font-size: 14px;
+                  }
+                }
+
+
+              }
+            }
+
+            .button {
+              width: 15%;
+              height: 40%;
+              margin: 0 5px 0 5px;
+
+
+              .icon {
+                height: 90%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .wrapper {
+    min-height: 80vh;
+    width: 100%;
+
+    form {
+      width: 90%;
+      height: 700px;
+
+      .controls {
+        width: 100%;
+        height: 10%;
+
+        .button {
+          width: 15%;
+          height: 100%;
+
+          .icon {
+            width: 64px;
+          }
+
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .form-input {
+        height: 70%;
+        width: 30%;
+
+        margin: 0 10px 0 10px;
+
+        label {
+          height: 30%;
+          width: 100%;
+
+          margin-bottom: 5px;
+          border-bottom: #FF891C 2px solid;
+          font-size: 16px;
+
+        }
+
+        input {
+          height: 80%;
+          width: 100%;
+
+          font-size: 36px;
+        }
+
+        select {
+          height: 80%;
+          width: 100%;
+
+          font-size: 24px;
+        }
+      }
+
+      .address-block {
+        flex-direction: row;
+        width: 90%;
+        height: 20%;
+        margin: 5px;
+        padding: 10px;
+
+        .icon {
+          width: 64px;
+        }
+      }
+
+      .details-block {
+        flex-direction: row;
+        width: 90%;
+        height: 20%;
+        margin: 5px;
+        padding: 10px;
+      }
+
+      button {
+        width: 20%;
+        height: 10%;
+
+        font-size: 24px;
+      }
+    }
+
+    .modal-wrapper {
+      width: 100%;
+      height: 100vh;
+
+
+      background-color: rgb(0,0,0, 0.5);
+
+      .destination-input {
+        height: 100%;
+        width: 80%;
+
+        padding: 10px;
+
+        .header {
+          width: 100%;
+          font-size: 36px;
+        }
+
+        input {
+          height: 10%;
+          width: 60%;
+
+          margin: 10px;
+
+          font-size: 24px;
+        }
+
+        .departments {
+          padding: 5px;
+          height: 70%;
+          width: 85%;
+
+          .department{
+            width: 80%;
+            height: 30%;
+            padding: 5px;
+            margin: 5px;
+
+            span {
+              height: 80%;
+              width: 20%;
+              font-size: 16px;
+              margin: 5px;
+            }
+
+            .location {
+              width: 60%;
+              height: 80%;
+
+              .address {
+                height: 50%;
+                width: 100%;
+
+                font-size: 14px;
+              }
+
+              .features {
+                height: 50%;
+                width: 100%;
+
+                .feature {
+                  height: 90%;
+
+                  margin: 0 10px 0 10px;
+
+                  .icon {
+                    width: 32px;
+                  }
+
+                  .text {
+                    font-size: 12px;
+                  }
+                }
+
+
+              }
+            }
+
+            .button {
+              width: 15%;
+              height: 40%;
+              margin: 0 5px 0 5px;
+
+
+              .icon {
+                height: 90%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    min-height: 80vh;
+    width: 100%;
+
+    form {
+      width: 90%;
+      height: 700px;
+
+      .controls {
+        width: 100%;
+        height: 10%;
+
+        .button {
+          width: 25%;
+          height: 100%;
+
+          .icon {
+            width: 64px;
+          }
+
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .form-input {
+        height: 70%;
+        width: 30%;
+
+        margin: 0 10px 0 10px;
+
+        label {
+          height: 30%;
+          width: 100%;
+
+          margin-bottom: 5px;
+          border-bottom: #FF891C 2px solid;
+          font-size: 16px;
+
+        }
+
+        input {
+          height: 80%;
+          width: 100%;
+
+          font-size: 24px;
+        }
+
+        select {
+          height: 80%;
+          width: 100%;
+
+          font-size: 20px;
+        }
+      }
+
+      .address-block {
+        flex-direction: row;
+        width: 90%;
+        height: 20%;
+        margin: 5px;
+        padding: 10px;
+
+        .icon {
+          width: 64px;
+        }
+      }
+
+      .details-block {
+        flex-direction: row;
+        width: 90%;
+        height: 20%;
+        margin: 5px;
+        padding: 10px;
+      }
+
+      button {
+        width: 25%;
+        height: 10%;
+
+        font-size: 20px;
+      }
+    }
+
+    .modal-wrapper {
+      width: 100%;
+      height: 100vh;
+
+
+      background-color: rgb(0,0,0, 0.5);
+
+      .destination-input {
+        height: 100%;
+        width: 100%;
+
+        padding: 10px;
+
+        .header {
+          width: 100%;
+          font-size: 36px;
+        }
+
+        input {
+          height: 10%;
+          width: 60%;
+
+          margin: 10px;
+
+          font-size: 18px;
+        }
+
+        .departments {
+          padding: 5px;
+          height: 70%;
+          width: 85%;
+
+          .department{
+            width: 80%;
+            height: 30%;
+            padding: 5px;
+            margin: 5px;
+
+            span {
+              height: 80%;
+              width: 20%;
+              font-size: 16px;
+              margin: 5px;
+            }
+
+            .location {
+              width: 60%;
+              height: 80%;
+
+              .address {
+                height: 50%;
+                width: 100%;
+
+                font-size: 14px;
+              }
+
+              .features {
+                height: 50%;
+                width: 100%;
+
+                .feature {
+                  height: 90%;
+
+                  margin: 0 10px 0 10px;
+
+                  .icon {
+                    width: 32px;
+                  }
+
+                  .text {
+                    font-size: 12px;
+                  }
+                }
+
+
+              }
+            }
+
+            .button {
+              width: 15%;
+              height: 40%;
+              margin: 0 5px 0 5px;
+
+
+              .icon {
+                height: 90%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .wrapper {
+    min-height: 80vh;
+    width: 100%;
+
+    form {
+      width: 90%;
+      height: 700px;
+
+      .controls {
+        width: 100%;
+        height: 10%;
+
+        .button {
+          width: 50%;
+          height: 100%;
+
+          .icon {
+            width: 32px;
+          }
+
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .form-input {
+        height: 70%;
+        width: 30%;
+
+        margin: 0 10px 0 10px;
+
+        label {
+          height: 30%;
+          width: 100%;
+
+          margin-bottom: 5px;
+          border-bottom: #FF891C 2px solid;
+          font-size: 16px;
+
+        }
+
+        input {
+          height: 40%;
+          width: 100%;
+
+          font-size: 18px;
+        }
+
+        select {
+          height: 40%;
+          width: 100%;
+
+          font-size: 20px;
+        }
+      }
+
+      .address-block {
+        flex-direction: row;
+        width: 90%;
+        height: 30%;
+        margin: 5px;
+        padding: 10px;
+
+        .icon {
+          width: 32px;
+        }
+      }
+
+      .details-block {
+        flex-direction: row;
+        width: 90%;
+        height: 30%;
+        margin: 5px;
+        padding: 10px;
+      }
+
+      button {
+        width: 40%;
+        height: 10%;
+
+        font-size: 18px;
+      }
+    }
+
+    .modal-wrapper {
+      width: 100%;
+      height: 100vh;
+
+
+      background-color: rgb(0,0,0, 0.5);
+
+      .destination-input {
+        height: 100%;
+        width: 100%;
+
+        padding: 10px;
+
+        .header {
+          width: 100%;
+          font-size: 36px;
+        }
+
+        input {
+          height: 10%;
+          width: 60%;
+
+          margin: 10px;
+
+          font-size: 18px;
+        }
+
+        .departments {
+          padding: 5px;
+          height: 70%;
+          width: 95%;
+
+          .department{
+            width: 95%;
+            height: 30%;
+            padding: 5px;
+            margin: 5px;
+
+            span {
+              height: 80%;
+              width: 20%;
+              font-size: 16px;
+              margin: 5px;
+            }
+
+            .location {
+              width: 60%;
+              height: 80%;
+
+              .address {
+                height: 50%;
+                width: 100%;
+
+                font-size: 10px;
+              }
+
+              .features {
+                height: 50%;
+                width: 100%;
+
+                .feature {
+                  height: 90%;
+
+                  margin: 0 10px 0 10px;
+
+                  .icon {
+                    width: 16px;
+                  }
+
+                  .text {
+                    font-size: 10px;
+                  }
+                }
+
+
+              }
+            }
+
+            .button {
+              width: 15%;
+              height: 40%;
+              margin: 0 5px 0 5px;
+
+
+              .icon {
+                height: 90%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .wrapper {
+    min-height: 80vh;
+    width: 100%;
+
+    form {
+      width: 90%;
+      height: 700px;
+
+      .controls {
+        width: 100%;
+        height: 10%;
+
+        .button {
+          width: 50%;
+          height: 100%;
+
+          .icon {
+            width: 32px;
+          }
+
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .form-input {
+        height: 70%;
+        width: 30%;
+
+        margin: 0 10px 0 10px;
+
+        label {
+          height: 30%;
+          width: 100%;
+
+          margin-bottom: 5px;
+          border-bottom: #FF891C 2px solid;
+          font-size: 12px;
+
+        }
+
+        input {
+          height: 40%;
+          width: 100%;
+
+          font-size: 18px;
+        }
+
+        select {
+          height: 40%;
+          width: 100%;
+
+          font-size: 12px;
+        }
+      }
+
+      .address-block {
+        flex-direction: row;
+        width: 90%;
+        height: 30%;
+        margin: 5px;
+        padding: 10px;
+
+        .icon {
+          width: 32px;
+        }
+      }
+
+      .details-block {
+        flex-direction: row;
+        width: 90%;
+        height: 30%;
+        margin: 5px;
+        padding: 10px;
+      }
+
+      button {
+        width: 40%;
+        height: 10%;
+
+        font-size: 18px;
+      }
+    }
+
+    .modal-wrapper {
+      width: 100%;
+      height: 100vh;
+
+
+      background-color: rgb(0,0,0, 0.5);
+
+      .destination-input {
+        height: 100%;
+        width: 100%;
+
+        padding: 10px;
+
+        .header {
+          width: 100%;
+          font-size: 36px;
+        }
+
+        input {
+          height: 10%;
+          width: 60%;
+
+          margin: 10px;
+
+          font-size: 16px;
+        }
+
+        .departments {
+          padding: 5px;
+          height: 70%;
+          width: 95%;
+
+          .department{
+            width: 95%;
+            height: 30%;
+            padding: 5px;
+            margin: 5px;
+
+            span {
+              height: 80%;
+              width: 20%;
+              font-size: 16px;
+              margin: 5px;
+            }
+
+            .location {
+              width: 60%;
+              height: 80%;
+
+              .address {
+                height: 50%;
+                width: 100%;
+
+                font-size: 8px;
+              }
+
+              .features {
+                height: 50%;
+                width: 100%;
+
+                .feature {
+                  height: 90%;
+
+                  margin: 0 10px 0 10px;
+
+                  .icon {
+                    width: 16px;
+                  }
+
+                  .text {
+                    font-size: 10px;
+                  }
+                }
+
+
+              }
+            }
+
+            .button {
+              width: 15%;
+              height: 40%;
+              margin: 0 5px 0 5px;
+
+
+              .icon {
+                height: 90%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .wrapper {
+    min-height: 80vh;
+    width: 100%;
+
+    form {
+      width: 90%;
+      height: 700px;
+
+      .controls {
+        width: 100%;
+        height: 10%;
+
+        .button {
+          width: 50%;
+          height: 100%;
+
+          .icon {
+            width: 32px;
+          }
+
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .form-input {
+        height: 70%;
+        width: 30%;
+
+        margin: 0 10px 0 10px;
+
+        label {
+          height: 30%;
+          width: 100%;
+
+          margin-bottom: 5px;
+          border-bottom: #FF891C 2px solid;
+          font-size: 10px;
+
+        }
+
+        input {
+          height: 40%;
+          width: 100%;
+
+          font-size: 18px;
+        }
+
+        select {
+          height: 40%;
+          width: 100%;
+
+          font-size: 12px;
+        }
+      }
+
+      .address-block {
+        flex-direction: row;
+        width: 95%;
+        height: 30%;
+        margin: 5px;
+        padding: 10px;
+
+        .icon {
+          width: 32px;
+        }
+      }
+
+      .details-block {
+        flex-direction: row;
+        width: 95%;
+        height: 30%;
+        margin: 5px;
+        padding: 10px;
+      }
+
+      button {
+        width: 60%;
+        height: 10%;
+
+        font-size: 18px;
+      }
+    }
+
+    .modal-wrapper {
+      width: 100%;
+      height: 100vh;
+
+
+      background-color: rgb(0,0,0, 0.5);
+
+      .destination-input {
+        height: 100%;
+        width: 100%;
+
+        padding: 10px;
+
+        .header {
+          width: 100%;
+          font-size: 36px;
+        }
+
+        input {
+          height: 10%;
+          width: 60%;
+
+          margin: 10px;
+
+          font-size: 16px;
+        }
+
+        .departments {
+          padding: 5px;
+          height: 70%;
+          width: 95%;
+
+          .department{
+            width: 95%;
+            height: 30%;
+            padding: 5px;
+            margin: 5px;
+
+            span {
+              height: 80%;
+              width: 20%;
+              font-size: 16px;
+              margin: 5px;
+            }
+
+            .location {
+              width: 60%;
+              height: 80%;
+
+              .address {
+                height: 50%;
+                width: 100%;
+
+                font-size: 8px;
+              }
+
+              .features {
+                height: 50%;
+                width: 100%;
+
+                .feature {
+                  height: 90%;
+
+                  margin: 0 10px 0 10px;
+
+                  .icon {
+                    width: 16px;
+                  }
+
+                  .text {
+                    font-size: 10px;
+                  }
+                }
+
+
+              }
+            }
+
+            .button {
+              width: 15%;
+              height: 40%;
+              margin: 0 5px 0 5px;
+
+
+              .icon {
+                height: 90%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
