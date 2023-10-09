@@ -1,0 +1,33 @@
+<div class="wrapper">
+  <div class="checkout-wrapper">
+    <div class="controls">
+      <div class="button">
+        <div class="icon back-icon"></div>
+        <span>Back</span>
+      </div>
+    </div>
+    <div class="content">
+      <div class="inner">
+        <div class="header">Delivery details</div>
+        <div class="form-input">
+          <label for="from">Sending department</label>
+          <input id="from" type="text" disabled/>
+        </div>
+        <div class="form-input">
+          <label for="destination">Receiving department</label>
+          <input id="destination" type="text" disabled/>
+        </div>
+        <div class="form-input">
+          <label for="weight">Weight</label>
+          <input id="weight" type="number" disabled/>
+        </div>
+        <div class="form-input">
+          <label for="fragility">Fragility</label>
+          <input id="fragility" type="checkbox" disabled checked/>
+        </div>
+        <div class="total">25$</div>
+      </div>
+      <div class="inner">{{JSON.stringify(data)}}</div>
+    </div>
+  </div>
+</div>

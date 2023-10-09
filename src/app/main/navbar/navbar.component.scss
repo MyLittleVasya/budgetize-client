@@ -33,6 +33,7 @@
       height: 90%;
       width: 15%;
 
+      text-shadow: #FF891C 1px 0 3px;
       font-size: 36px;
       color: #FF891C;
       background-color: white;
@@ -47,7 +48,7 @@
     }
 
     .navigation {
-      display: flex;
+      display: inline-flex;
       flex-direction: row;
       align-items: center;
       width: 60%;

@@ -1,11 +1,14 @@
 import {Component, ElementRef, Input, ViewChild} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
+import {Data, DeliveryFormService, Destination} from "./delivery-form.service";
+
 
 
 @Component({
   selector: 'app-delivery-form',
   templateUrl: './delivery-form.component.html',
-  styleUrls: ['./delivery-form.component.scss', './delivery-form.component.icons.scss']
+  styleUrls: ['./delivery-form.component.scss', './delivery-form.component.icons.scss'],
+  providers: [DeliveryFormService]
 })
 export class DeliveryFormComponent {
 
@@ -29,10 +32,8 @@ export class DeliveryFormComponent {
 
   type: string | null;
 
-  data: Data = new Data()
-
   destinationType: string = ''
-  constructor(private router: Router, private route: ActivatedRoute) { }
+  constructor(private router: Router, private route: ActivatedRoute, public service: DeliveryFormService) { }
 
   ngOnInit() {
     this.type = this.route.snapshot.queryParams['formType']
@@ -41,22 +42,12 @@ export class DeliveryFormComponent {
       this.router.navigate(['notFound'])
     }
 
-    this.destinations_view = this.filterDestinations('')
-  }
-
-  filterDestinations(keyword:string) {
-    return this.destinations_default.filter((obj) => {
-      return (
-        obj.id.toLowerCase().includes(keyword) ||
-        obj.address.toLowerCase().includes(keyword) ||
-        obj.city.toLowerCase().includes(keyword)
-      );
-    });
+    this.destinations_view = this.service.filterDestinations('', this.destinations_default)
   }
 
   inputOnChange(value:string) {
     this.destination_input = value
-    this.destinations_view = this.filterDestinations(this.destination_input.toLowerCase())
+    this.destinations_view = this.service.filterDestinations(this.destination_input.toLowerCase(), this.destinations_default)
   }
 
   showDestinationInput(type:string) {
@@ -70,39 +61,22 @@ export class DeliveryFormComponent {
 
   input(value:string) {
     if (this.destinationType == 'from') {
-      this.data.from = value
+      this.service.data.from = value
     }
     else {
-      this.data.destination = value
+      this.service.data.destination = value
     }
     this.hideDestinationInput()
-  }
-
-  resetForm() {
-    this.data = new Data()
   }
 
   backRedirect() {
     this.router.navigate(['..', 'services'], { relativeTo: this.route});
   }
-}
-
-export class Destination {
-  constructor(
-    public id: string,
-    public city: string,
-    public address: string
-  ){}
-}
-
-export class Data {
-  constructor(
-    public from?: string,
-    public destination?: string,
-    public payer?: string,
-    public weight?: number,
-    public isFragile:boolean = false,
-    public numberOfDocuments?: number
-  ) {
+  checkoutRedirect() {
+    this.router.navigate(['..', 'checkout'], { relativeTo: this.route, queryParams: {formType: this.type}});
   }
 }
+
+
+
+

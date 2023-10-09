@@ -24,7 +24,8 @@
       height: 70vh;
 
       margin: 0 10px 0 10px;
-      border: #FF891C 3px solid;
+      border: #FF891C solid;
+      border-width: 0 3px 3px 3px;
 
       .header {
         display: flex;

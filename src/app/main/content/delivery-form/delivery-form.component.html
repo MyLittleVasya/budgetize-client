@@ -5,7 +5,7 @@
         <div class="icon back-icon"></div>
         <span>Back</span>
       </div>
-      <div class="button" (click)="resetForm()">
+      <div class="button" (click)="service.resetForm()">
         <div class="icon reset-icon"></div>
         <span>Reset</span>
       </div>
@@ -13,34 +13,34 @@
     <div class="address-block">
       <div class="form-input">
         <label for="from_address">Sending department №</label>
-        <input id="from_address" (click)="showDestinationInput('from')" value="{{data.from}}"/>
+        <input id="from_address" (click)="showDestinationInput('from')" value="{{service.data.from}}"/>
       </div>
 
       <div class="icon destination-arrow"></div>
       <div class="form-input">
         <label for="destination_address">Receiving department №</label>
-        <input id="destination_address" (click)="showDestinationInput('destination')" value="{{data.destination}}"/>
+        <input id="destination_address" (click)="showDestinationInput('destination')" value="{{service.data.destination}}"/>
       </div>
     </div>
 
     <div class="details-block">
       <div class="form-input" *ngIf="type == 'Cargo'">
         <label for="cargo_weight">Weight of cargo (in kg)</label>
-        <input id="cargo_weight" [ngModel]="data.weight" (ngModelChange)="data.weight = $event" type="number" min="0.0001" max="600" name="weight"/>
+        <input id="cargo_weight" [ngModel]="service.data.weight" (ngModelChange)="service.data.weight = $event" type="number" min="0.0001" max="600" name="weight"/>
       </div>
       <div class="form-input" *ngIf="type == 'Cargo'">
         <label for="fragility">Is cargo fragile?</label>
-        <input id="fragility" [ngModel]="data.isFragile" (ngModelChange)="data.isFragile = $event" type="checkbox" name="fragility"/>
+        <input id="fragility" [ngModel]="service.data.isFragile" (ngModelChange)="service.data.isFragile = $event" type="checkbox" name="fragility"/>
       </div>
       <div class="form-input">
         <label for="payer_select">Payment performed by</label>
-        <select id="payer_select" [ngModel]="data.payer" (ngModelChange)="data.payer = $event" name="payer">
+        <select id="payer_select" [ngModel]="service.data.payer" (ngModelChange)="service.data.payer = $event" name="payer">
           <option value="sender" selected>Sender</option>
           <option value="recipient">Recipient</option>
         </select>
       </div>
     </div>
-    <button type="submit">Go to payment</button>
+    <button type="submit" (click)="checkoutRedirect()">Go to payment</button>
   </form>
   <div class="modal-wrapper" #address_modal>
     <div class="destination-input">

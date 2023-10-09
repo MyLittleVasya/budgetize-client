@@ -10,13 +10,28 @@
   background-color: #EEEAEA;
 
   .background {
+    position: relative;
     width: 100%;
     height: 450px;
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/assets/images/shipping_img.png);
+    //background-image: url(/assets/images/shipping_img.png);
+
+    .bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(/assets/images/shipping_img.png);
+      filter: blur(1px);
+    }
 
     .promo {
       display: flex;
@@ -107,6 +122,7 @@
         width: 15%;
         height: 50%;
         margin: 0 20px 0 20px;
+        box-shadow: 10px 10px 17px 0px rgba(255,137,28,0.38);
         border: #FF891C 0 solid;
         transition: 0.3s;
         cursor: pointer;
@@ -123,7 +139,13 @@
           text-align: center;
           color: #FF891C;
           font-size: 36px;
+          font-family: "JetBrains Mono Medium", serif;
           font-weight: 700;
+        }
+
+        .header::first-letter {
+          background-color: #FF891C;
+          color: white;
         }
 
         .description {
@@ -131,6 +153,7 @@
           width: 100%;
           text-align: center;
           color: #FF891C;
+
           font-size: 20px;
         }
       }
@@ -327,8 +350,12 @@
           text-align: center;
         }
 
+        option + option, option:checked, option[selected] {
+          margin-bottom: 10px;
+        }
+
         option:checked {
-          background-color: rgba(255, 137, 28, 0.5);
+          background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,137,28,0.7512254901960784) 40%);
         }
       }
 
@@ -337,12 +364,9 @@
         outline: none;
       }
 
-      .checkbox {
+      input ~ .checkbox {
+        accent-color: darkorange;
         height: 32px;
-      }
-
-      .checkbox:active {
-        background-color: #FF891C;
       }
 
       button {

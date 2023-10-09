@@ -15,6 +15,12 @@ import { ServicesComponent } from './main/content/services/services.component';
 import { DeliveryFormComponent } from './main/content/delivery-form/delivery-form.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import {FormsModule} from "@angular/forms";
+import { CheckoutComponent } from './main/content/checkout/checkout.component';
+import {NgxStripeModule} from "ngx-stripe";
+import {environment} from "./enviroment";
+
+
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full'},
@@ -24,6 +30,7 @@ const routes: Routes = [
       { path: 'lab', component: Homelab2Component, outlet: 'content-router' },
       { path: 'deliveryForm', component: DeliveryFormComponent, outlet: 'content-router' },
       { path: 'services', component: ServicesComponent, outlet: 'content-router' },
+      { path: 'checkout', component: CheckoutComponent, outlet: 'content-router' },
     ]
   },
   { path: '**', component: NotFoundComponent}
@@ -46,6 +53,7 @@ const routerOptions: ExtraOptions = {
     ServicesComponent,
     DeliveryFormComponent,
     NotFoundComponent,
+    CheckoutComponent,
   ],
     imports: [
         BrowserModule,
@@ -53,6 +61,7 @@ const routerOptions: ExtraOptions = {
         PieChartModule,
         BarChartModule,
         RouterModule.forRoot(routes, routerOptions),
+        NgxStripeModule.forRoot(environment.stripe.publicKey),
         TreeMapModule,
         FormsModule,
     ],
